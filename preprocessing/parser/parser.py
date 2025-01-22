@@ -5,10 +5,9 @@ import fitz
 import docx
 from bs4 import BeautifulSoup
 import csv
-from preprocessing.config import CLASSES, LEGAL_CODES
+from config import CLASSES, LEGAL_CODES
 from preprocessing.parser.prompts import PROMPT_PARSE_LEGAL_CODES
 from utils.wrapper import LLMWrapper
-
 
 wrapper = LLMWrapper()
 
@@ -111,7 +110,6 @@ def classify_documents(state):
 
 
 def parse_documents(state):
-    pass
     for file in state['files'][LEGAL_CODES]:
         content = runnable_parse_legal_codes.invoke({ 'content': file[1] })
         file[1] = content
