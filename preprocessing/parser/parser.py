@@ -12,6 +12,8 @@ from utils.wrapper import LLMWrapper
 
 wrapper = LLMWrapper()
 
+runnable_parse_legal_codes = (PROMPT_PARSE_LEGAL_CODES | wrapper.llm)
+
 
 def load_pdf(file_path):
     doc = fitz.open(file_path)
@@ -109,8 +111,9 @@ def classify_documents(state):
 
 
 def parse_documents(state):
+    pass
     for file in state['files'][LEGAL_CODES]:
-        content = ({ 'content': file[1]} | PROMPT_PARSE_LEGAL_CODES | wrapper.llm)
+        content = runnable_parse_legal_codes.invoke({ 'content': file[1] })
         file[1] = content
 
     return state['files']

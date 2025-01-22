@@ -1,8 +1,11 @@
+from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_ibm import ChatWatsonx
 from langchain_openai import ChatOpenAI
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames
 from utils.models import MODELS, WATSONX
+
+load_dotenv()
 
 
 def initialize_llm(model_id: str, temperature:float=0.0, max_tokens:int=None, max_retries:int=2):
