@@ -1,0 +1,33 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": {
+            "Nome": "string",
+            "Abilità": [
+                {
+                    "Tipo": "string",
+                    "Livello": "integer"
+                }
+            ]
+        },
+        "Descrizione": "string",
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    "string"
+                ],
+                "Tecniche": [
+                    "string"
+                ]
+            }
+        ],
+        "Licenze": [
+            {
+                "Tipo": "string",
+                "Livello": "integer"
+            }
+        ]
+    }
+}

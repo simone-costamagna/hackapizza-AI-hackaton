@@ -1,0 +1,46 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": {
+            "Nome": "string",
+            "Titolo": "string",
+            "CertificazioniPsioniche": {
+                "Intensità": "integer",
+                "Licenze": [
+                    {
+                        "Tipo": "string",
+                        "Livello": "integer"
+                    }
+                ]
+            },
+            "Esperienza": "string"
+        },
+        "Descrizione": "string",
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Prezzo": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    {
+                        "Nome": "string",
+                        "TecnicaPreparazione": "string"
+                    }
+                ],
+                "TecnicheCulinarie": [
+                    {
+                        "Nome": "string",
+                        "Descrizione": "string"
+                    }
+                ],
+                "EsperienzaSensoriale": "string"
+            }
+        ],
+        "OrdiniProfessionaliGastronomici": [
+            {
+                "Simbolo": "string",
+                "Nome": "string"
+            }
+        ]
+    }
+}

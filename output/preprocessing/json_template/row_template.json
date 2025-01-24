@@ -1,0 +1,92 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Descrizione": "string",
+        "Ubicazione": {
+            "Pianeta": "string",
+            "Coordinate": "string|null"
+        },
+        "Chef": {
+            "Nome": "string",
+            "Cognome": "string|null",
+            "Descrizione": "string|null",
+            "Licenze": [
+                {
+                    "Tipo": "string",
+                    "Livello": "string"
+                }
+            ],
+            "Certificazioni": [
+                {
+                    "Tipo": "string",
+                    "Livello": "string",
+                    "AnnoConseguimento": "integer|null"
+                }
+            ],
+            "Specializzazioni": [
+                "string"
+            ],
+            "EsperienzePrecedenti": [
+                {
+                    "Nome": "string",
+                    "Descrizione": "string"
+                }
+            ],
+            "Formazione": {
+                "Istituto": "string",
+                "Competenze": [
+                    {
+                        "Nome": "string",
+                        "Livello": "string|null"
+                    }
+                ]
+            }
+        },
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string|null",
+                "Ingredienti": [
+                    {
+                        "Nome": "string",
+                        "Provenienza": "string|null",
+                        "TecnicaPreparazione": "string|null"
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "string",
+                        "Descrizione": "string|null"
+                    }
+                ],
+                "EsperienzaSensoriale": "string|null",
+                "EsperienzaVisiva": "string|null",
+                "Note": "string|null"
+            }
+        ],
+        "Prenotazioni": {
+            "Obbligatorie": "boolean",
+            "Condizioni": "string",
+            "AnticipoRichiesto": "string|null",
+            "MetodiPagamento": [
+                "string"
+            ],
+            "Richieste": [
+                {
+                    "Tipo": "string",
+                    "Dettagli": "string"
+                }
+            ]
+        },
+        "EsperienzaCulinaria": {
+            "Tema": "string",
+            "Descrizione": "string|null",
+            "ElementiSensoriali": [
+                "string"
+            ],
+            "Filosofia": "string|null"
+        },
+        "AnnoApertura": "integer|null",
+        "LivelloLTK": "integer|null"
+    }
+}

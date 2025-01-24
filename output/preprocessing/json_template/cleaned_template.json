@@ -1,0 +1,82 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Descrizione": "string",
+        "Ubicazione": {
+            "Pianeta": "string",
+            "Coordinate": "string|null"
+        },
+        "Chef": {
+            "Nome": "string",
+            "Cognome": "string|null",
+            "Licenze": [
+                {
+                    "Tipo": "string",
+                    "Livello": "string"
+                }
+            ],
+            "Certificazioni": [
+                {
+                    "Tipo": "string",
+                    "Livello": "string",
+                    "AnnoConseguimento": "integer|null"
+                }
+            ],
+            "Specializzazioni": [
+                "string"
+            ],
+            "Formazione": {
+                "Istituto": "string",
+                "Competenze": [
+                    {
+                        "Nome": "string",
+                        "Livello": "string|null"
+                    }
+                ]
+            },
+            "EsperienzaCulinaria": {
+                "Tema": "string",
+                "ElementiSensoriali": [
+                    "string"
+                ],
+                "Filosofia": "string|null"
+            }
+        },
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Ingredienti": [
+                    {
+                        "Nome": "string",
+                        "Provenienza": "string|null",
+                        "TecnicaPreparazione": "string|null"
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "string",
+                        "Descrizione": "string|null"
+                    }
+                ],
+                "EsperienzaSensoriale": "string|null",
+                "EsperienzaVisiva": "string|null",
+                "Note": "string|null"
+            }
+        ],
+        "Prenotazioni": {
+            "Obbligatorie": "boolean",
+            "Condizioni": "string",
+            "MetodiPagamento": [
+                "string"
+            ],
+            "Richieste": [
+                {
+                    "Tipo": "string",
+                    "Dettagli": "string"
+                }
+            ]
+        },
+        "AnnoApertura": "integer|null",
+        "LivelloLTK": "integer|null"
+    }
+}

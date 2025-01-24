@@ -1,0 +1,32 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": {
+            "Nome": "string",
+            "Abilità": {
+                "Gravitazionale": "integer",
+                "Psionico": "integer",
+                "Quantistica": "integer",
+                "Temporale": "integer",
+                "Antimateria": "integer",
+                "Magnetismo": "integer",
+                "Luce": "integer"
+            }
+        },
+        "Descrizione": "string",
+        "LivelloTecnologico": "string",
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    {
+                        "NomeIngrediente": "string",
+                        "TecnicaPreparazione": "string"
+                    }
+                ],
+                "EsperienzaSensoriale": "string"
+            }
+        ]
+    }
+}

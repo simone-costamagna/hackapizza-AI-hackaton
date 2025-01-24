@@ -1,0 +1,77 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": "string",
+        "Descrizione": "string",
+        "Location": "string",
+        "FilosofiaCulinaria": "string",
+        "EsperienzePrecedenti": [
+            {
+                "Nome": "string",
+                "Descrizione": "string"
+            }
+        ],
+        "TecnicheCulinarie": [
+            {
+                "Nome": "string",
+                "Descrizione": "string"
+            }
+        ],
+        "Menu": {
+            "Primi": [
+                {
+                    "Nome": "string",
+                    "Descrizione": "string",
+                    "Ingredienti": [
+                        {
+                            "Nome": "string",
+                            "Descrizione": "string"
+                        }
+                    ],
+                    "TecnichePreparazione": [
+                        {
+                            "Nome": "string",
+                            "Descrizione": "string"
+                        }
+                    ]
+                }
+            ],
+            "Secondi": [
+                {
+                    "Nome": "string",
+                    "Descrizione": "string",
+                    "Ingredienti": [
+                        {
+                            "Nome": "string",
+                            "Descrizione": "string"
+                        }
+                    ],
+                    "TecnichePreparazione": [
+                        {
+                            "Nome": "string",
+                            "Descrizione": "string"
+                        }
+                    ]
+                }
+            ],
+            "Contorni": [
+                {
+                    "Nome": "string",
+                    "Descrizione": "string",
+                    "Ingredienti": [
+                        {
+                            "Nome": "string",
+                            "Descrizione": "string"
+                        }
+                    ],
+                    "TecnichePreparazione": [
+                        {
+                            "Nome": "string",
+                            "Descrizione": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

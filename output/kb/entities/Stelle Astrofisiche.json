@@ -1,0 +1,140 @@
+{
+    "Ristorante": {
+        "Nome": "Stelle Astrofisiche",
+        "Pianeta": "Krypton",
+        "Chef": {
+            "Nome": "Alessandro",
+            "Cognome": "Zod-Marinetti",
+            "Certificazioni": [
+                {
+                    "Tipo": "Licenza Quantistica",
+                    "Livello": 4,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Licenza Luce",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Licenza Gravitazionale",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Licenza Antimateria",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Viaggio Cosmico tra Mare e Stelle",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Spezie Melange",
+                        "Provenienza": "Krypton"
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    }
+                ],
+                "EsperienzaSensoriale": "multisensoriale",
+                "EsperienzaVisiva": "armoniosa",
+                "Note": "non è solo un pasto, ma un'esperienza multisensoriale progettata per sfidare e deliziare i tuoi sensi"
+            },
+            {
+                "NomePiatto": "Nebulosa di Dragone all'Essenza di Vuoto",
+                "Ingredienti": [
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Spore Quantiche",
+                        "Provenienza": "Krypton"
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    }
+                ],
+                "EsperienzaSensoriale": "eterea",
+                "EsperienzaVisiva": "luminosità fosforescente",
+                "Note": "un'opera d'arte che celebra la relazione tra il cosmo e l'arte gastronomica"
+            },
+            {
+                "NomePiatto": "Il Viaggio Cosmico di Marinetti",
+                "Ingredienti": [
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": "Krypton"
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": "Krypton"
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Amalgamazione Sintetica Molecolare"
+                    },
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    }
+                ],
+                "EsperienzaSensoriale": "multisensoriale",
+                "EsperienzaVisiva": "incantevole",
+                "Note": "un piatto che sfida la percezione del tempo e dello spazio"
+            }
+        ],
+        "AnnoApertura": null,
+        "LivelloLTK": null
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": {
+            "Nome": "string",
+            "Cognome": "string",
+            "Licenze": [
+                "string"
+            ]
+        },
+        "Descrizione": "string",
+        "Prenotazione": {
+            "AnticipoRichiesto": "string",
+            "MetodiPagamento": [
+                "string"
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    "string"
+                ],
+                "Tecniche": [
+                    "string"
+                ]
+            }
+        ]
+    }
+}

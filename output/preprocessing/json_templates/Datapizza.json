@@ -1,0 +1,50 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Descrizione": "string",
+        "Chef": {
+            "Nome": "string",
+            "Caratteristiche": "string",
+            "LivelliEducazione": {
+                "Quantistica": "integer",
+                "Temporale": "integer",
+                "Antimateria": "integer",
+                "Magnetica": "integer",
+                "Luce": "integer"
+            }
+        },
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    {
+                        "NomeIngrediente": "string",
+                        "TecnicaPreparazione": "string"
+                    }
+                ],
+                "TecnicheCulinarie": [
+                    "string"
+                ],
+                "EsperienzaSensoriale": "string"
+            }
+        ],
+        "Prenotazioni": {
+            "Obbligatorie": "boolean",
+            "ListaAttesa": "string",
+            "PrenotazioniUniversiParalleli": "string"
+        },
+        "Certificazioni": [
+            {
+                "EnteCertificatore": "string",
+                "LivelloCertificazione": "string"
+            }
+        ],
+        "LegendaOrdiniProfessionali": [
+            {
+                "Simbolo": "string",
+                "Descrizione": "string"
+            }
+        ]
+    }
+}

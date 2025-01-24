@@ -1,0 +1,40 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": {
+            "Nome": "string",
+            "Specializzazioni": [
+                "string"
+            ],
+            "TecnologieCulinarie": [
+                "string"
+            ]
+        },
+        "Location": "string",
+        "Descrizione": "string",
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    {
+                        "NomeIngrediente": "string",
+                        "Provenienza": "string|null",
+                        "TecnicaPreparazione": "string|null"
+                    }
+                ],
+                "TecnicheCulinarie": [
+                    "string"
+                ],
+                "Presentazione": "string"
+            }
+        ],
+        "EsperienzaCulinaria": {
+            "Tema": "string",
+            "ElementiSensoriali": [
+                "string"
+            ],
+            "Filosofia": "string"
+        }
+    }
+}

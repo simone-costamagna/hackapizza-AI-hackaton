@@ -1,0 +1,53 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": {
+            "Nome": "string",
+            "Specializzazioni": [
+                "string"
+            ],
+            "Licenze": [
+                {
+                    "Tipo": "string",
+                    "Livello": "string"
+                }
+            ]
+        },
+        "Posizione": {
+            "Pianeta": "string",
+            "Coordinate": "string"
+        },
+        "TecnologiaCulinaria": {
+            "Nome": "string",
+            "Caratteristiche": [
+                "string"
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    {
+                        "Nome": "string",
+                        "Provenienza": "string|null",
+                        "TecnicaPreparazione": "string"
+                    }
+                ],
+                "TecnicheCulinarie": [
+                    "string"
+                ],
+                "EsperienzaVisiva": "string"
+            }
+        ],
+        "Prenotazioni": {
+            "Condizioni": "string",
+            "Richieste": [
+                {
+                    "Tipo": "string",
+                    "Dettagli": "string"
+                }
+            ]
+        }
+    }
+}

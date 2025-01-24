@@ -1,0 +1,28 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Chef": {
+            "Nome": "string",
+            "Storia": "string",
+            "SkillCertificate": {
+                "Psionica": "integer",
+                "Temporale": "integer",
+                "Gravitazionale": "integer",
+                "Quantistica": "integer",
+                "Luce": "integer"
+            }
+        },
+        "Tecnologia": "string",
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Ingredienti": [
+                    "string"
+                ],
+                "Tecniche": [
+                    "string"
+                ]
+            }
+        ]
+    }
+}

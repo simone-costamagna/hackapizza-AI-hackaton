@@ -1,0 +1,28 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "ChefExecutive": "string",
+        "Descrizione": "string",
+        "LivelloLTK": "integer",
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Descrizione": "string",
+                "Ingredienti": [
+                    {
+                        "NomeIngrediente": "string",
+                        "TecnicaPreparazione": "string|null",
+                        "Provenienza": "string|null"
+                    }
+                ],
+                "TecnicheCulinarie": [
+                    {
+                        "NomeTecnica": "string",
+                        "Descrizione": "string"
+                    }
+                ],
+                "EsperienzaSensoriale": "string"
+            }
+        ]
+    }
+}
