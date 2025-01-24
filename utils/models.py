@@ -7,5 +7,5 @@ GPT_40_MINI = "gpt-4o-mini"
 
 MODELS = {
     WATSONX: [LLAMA_3],
-    OPENAI: [GPT_40,GPT_40_MINI]
+    OPENAI: [GPT_40, GPT_40_MINI]
 }

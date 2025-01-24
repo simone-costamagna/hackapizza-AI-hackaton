@@ -1,17 +1,21 @@
 import logging
 import os
+import fnmatch
+import re
 from langchain_core.runnables import RunnablePassthrough
 import fitz
 import docx
 from bs4 import BeautifulSoup
 import csv
-from config import CLASSES, LEGAL_CODES
+from tqdm import tqdm
+from config import OUTPUT_PREPROCESSING_MD_FILES_FOLDER
+from preprocessing.config import CLASSES, HANDBOOKS
 from preprocessing.parser.prompts import PROMPT_PARSE_LEGAL_CODES
 from utils.wrapper import LLMWrapper
 
 wrapper = LLMWrapper()
 
-runnable_parse_legal_codes = (PROMPT_PARSE_LEGAL_CODES | wrapper.llm)
+runnable_parse_legal_codes = ( PROMPT_PARSE_LEGAL_CODES | wrapper.llm | wrapper.parser )
 
 
 def load_pdf(file_path):
@@ -86,7 +90,7 @@ def load_documents(state):
                 if text:
                     files_content[file_path] = text
 
-    logging.info(f"{len(files_content)} file proccessed")
+    logging.info(f"{len(files_content)} file loaded")
 
     return files_content
 
@@ -96,12 +100,13 @@ def classify_documents(state):
 
     for file_path, content in state['files'].items():
         classified = False
-
-        for class_name, keywords in CLASSES.items():
-            if any(keyword in file_path for keyword in keywords):
-                files[class_name].append([file_path, content])
-                classified = True
-                break
+        for class_name, patterns in CLASSES.items():
+            for pattern in patterns:
+                normalized_pattern = f"*/{pattern}" if not pattern.startswith("*/") else pattern
+                if fnmatch.fnmatch(file_path, normalized_pattern):
+                    files[class_name].append([file_path, content])
+                    classified = True
+                    break  # Stop checking other patterns in the current class
 
         if not classified:
             logging.warning(f"Not classified: {file_path}")
@@ -110,9 +115,23 @@ def classify_documents(state):
 
 
 def parse_documents(state):
-    for file in state['files'][LEGAL_CODES]:
-        content = runnable_parse_legal_codes.invoke({ 'content': file[1] })
+    for file in tqdm(state['files'][HANDBOOKS], desc="Converting to md format"):
+        file_name = os.path.basename(file[0])
+        md_file_path = os.path.join(OUTPUT_PREPROCESSING_MD_FILES_FOLDER, os.path.splitext(file_name)[0] + '.md')
+
+        if os.path.exists(md_file_path):
+            with open(md_file_path, 'r', encoding='utf-8') as md_file:
+                content = md_file.read()
+        else:
+            content = runnable_parse_legal_codes.invoke({'content': file[1]})
+            content = re.sub(r'markdown\.\.\.\`{3}', '', content, flags=re.IGNORECASE)
+
+            with open(md_file_path, 'w', encoding='utf-8') as md_file:
+                md_file.write(content)
+
         file[1] = content
+
+    logging.info(f"{len(state['files'][HANDBOOKS])} files parsed to md")
 
     return state['files']
 

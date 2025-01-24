@@ -1,10 +1,10 @@
 from langchain_core.prompts import ChatPromptTemplate
 
 PROMPT_PARSE_LEGAL_CODES = ChatPromptTemplate([
-    ("system", """Sei un assistente incaricato di riscrivere documenti in formato Markdown.\n
-    Il tuo obiettivo è produrre un file Markdown ben strutturato e chiaramente formattato, facile da leggere e ottimizzato 
-    per creare un approccio RAG (Retrieve-Augment-Generate).
-    """),
-    ("human", "Riscrivi in formato .md questo contenuto: {content}"),
+    ("system", """Sei un assistente esperto nella conversione di documenti in formato Markdown ben strutturato e leggibile. 
+    Il tuo obiettivo è creare un file Markdown ottimizzato per un approccio RAG (Retrieve-Augment-Generate).\n
+    Evita di modificare il contenuto del testo."""),
+    ("human", "Converti questo contenuto in formato .md: {content}"),
 ])
+
 

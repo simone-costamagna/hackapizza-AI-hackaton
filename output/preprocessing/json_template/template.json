@@ -1,0 +1,38 @@
+{
+    "Ristorante": {
+        "Nome": "string",
+        "Pianeta": "string",
+        "Chef": {
+            "Nome": "string",
+            "Cognome": "string",
+            "Certificazioni": [
+                {
+                    "Tipo": "string",
+                    "Livello": "integer",
+                    "AnnoConseguimento": "integer"
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "string",
+                "Ingredienti": [
+                    {
+                        "Nome": "string",
+                        "Provenienza": "string"
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "string"
+                    }
+                ],
+                "EsperienzaSensoriale": "string",
+                "EsperienzaVisiva": "string",
+                "Note": "string"
+            }
+        ],
+        "AnnoApertura": "integer",
+        "LivelloLTK": "integer"
+    }
+}
