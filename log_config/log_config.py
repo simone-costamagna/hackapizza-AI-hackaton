@@ -14,3 +14,4 @@ def setup_logging(level=logging.INFO):
 
     # Suppress httpx logs
     logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("neo4j").setLevel(logging.WARNING)

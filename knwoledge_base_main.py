@@ -1,11 +1,10 @@
 import os
-
 from dotenv import load_dotenv
 from langchain_core.runnables import RunnablePassthrough
-
 from config import OUTPUT_KB_FOLDER, OUTPUT_KB_ENTITIES_FOLDER
 from knowledge_base.graph_db.graph_db import graph_db
 from knowledge_base.loader.loader import loader
+from knowledge_base.vector_db.vector_db import vector_db
 from log_config.log_config import setup_logging
 
 load_dotenv()
@@ -21,7 +20,8 @@ def setup(status):
 chain = (
     RunnablePassthrough(setup)
     | loader
-    | graph_db
+    # | graph_db
+    | vector_db
 )
 
 res = chain.invoke({})

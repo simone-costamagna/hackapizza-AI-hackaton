@@ -13,6 +13,7 @@ OUTPUT_JSON_TEMPLATE_FOLDER = os.path.join(OUTPUT_PREPROCESSING_FOLDER, 'json_te
 
 OUTPUT_KB_FOLDER = os.path.join(OUTPUT_FOLDER, 'kb')
 OUTPUT_KB_ENTITIES_FOLDER = os.path.join(OUTPUT_KB_FOLDER, 'entities')
+OUTPUT_KB_CHROMA = os.path.join(OUTPUT_KB_FOLDER, 'chrom')
 
 CONTESTO = """
     Benvenuti nel Ciclo Cosmico 789, dove l'umanità ha superato non solo i confini del proprio sistema solare, ma anche

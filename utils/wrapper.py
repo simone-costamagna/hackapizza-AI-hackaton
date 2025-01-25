@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_ibm import ChatWatsonx
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames
 from utils.models import MODELS, WATSONX
 
@@ -60,3 +60,19 @@ class LLMWrapper:
 
     def activate_log_probs(self):
         self._llm = self._llm.bind(logprobs=True)
+
+
+def initialize_embedding(platform: str):
+    if platform == 'openai':
+        return OpenAIEmbeddings()
+
+    return OpenAIEmbeddings
+
+
+class EmbeddingWrapper:
+    def __init__(self, platform='openai'):
+        self._embedding = initialize_embedding(platform)
+
+    @property
+    def embedding(self):
+        return self._embedding
