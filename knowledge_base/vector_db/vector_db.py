@@ -1,19 +1,16 @@
-import csv
-import json
 import logging
-import os
 from dotenv import load_dotenv
 from langchain_core.runnables import RunnablePassthrough
-from langchain_neo4j import Neo4jVector
-from neo4j import GraphDatabase
 from tqdm import tqdm
-from config import OUTPUT_KB_ENTITIES_FOLDER
-from knowledge_base.config import GRAPH_DB, TEMPLATE, VECTOR_DB
-from knowledge_base.graph_db.prompts import PROMPT_EXTRACT_ENTITY
+from knowledge_base.config import VECTOR_DB
+from knowledge_base.vector_db.db_utils import create_tables
 from knowledge_base.vector_db.rag_utils import loader
-from utils.wrapper import LLMWrapper, EmbeddingWrapper
 
 load_dotenv()
+
+
+def setup(status):
+    create_tables()
 
 
 def load_documents(status):
@@ -28,5 +25,6 @@ def load_documents(status):
 
 
 vector_db = (
-    RunnablePassthrough(load_documents)
+    RunnablePassthrough(setup)
+    | RunnablePassthrough(load_documents)
 )

@@ -55,7 +55,9 @@ def load_document(file_path, document):
       )
       chunks = splitter.split_documents(documents)
     elif filename.endswith(".md"):
-        headers_to_split_on = [("#", "Header 1"), ("##", "Header 2"), ("###", "Header 3"), ("###", "Header 4")]
+        headers_to_split_on = [("#", "Header 1"), ("##", "Header 2"), ("###", "Header 3")]
+        if filename == 'Codice Galattico.md':
+            headers_to_split_on.extend([("####", "Header 4")])
         splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
 
         with open(file_path, "r", encoding="utf-8") as file:
@@ -68,8 +70,8 @@ def load_document(file_path, document):
         update_document(filename, len(chunks))
 
     for index, chunk in enumerate(chunks):
-        metadata = {'type': random.choice(['Paris', 'London', 'Milan'])}
-        chunk.metadata = metadata
+        # metadata = {'type': random.choice(['Paris', 'London', 'Milan'])}
+        #chunk.metadata = metadata
         ids.append(f"{filename}_{index}")
 
     return chunks, ids

@@ -11,6 +11,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = int(os.getenv("DB_PORT"))
 
+
 def connect_to_db():
     """Connect to the PostgreSQL database."""
     try:
@@ -25,6 +26,55 @@ def connect_to_db():
     except Exception as e:
         logging.error(f"Failed to connect: {e}")
         return None
+
+
+def delete_tables():
+    drop_chunks_table = "DROP TABLE IF EXISTS Chunks;"
+    drop_documents_table = "DROP TABLE IF EXISTS Documents;"
+
+    connection = connect_to_db()
+    if connection:
+        try:
+            cursor = connection.cursor()
+            cursor.execute(drop_chunks_table)
+            cursor.execute(drop_documents_table)
+            connection.commit()
+            logging.info("Tables deleted successfully.")
+        except Exception as e:
+            logging.error(f"Error deleting tables: {e}")
+        finally:
+            cursor.close()
+            connection.close()
+
+
+def create_tables():
+    create_documents_table = """
+    CREATE TABLE IF NOT EXISTS Documents (
+        filename VARCHAR(255) PRIMARY KEY,
+        chunks INTEGER
+    );
+    """
+
+    create_chunks_table = """
+    CREATE TABLE IF NOT EXISTS Chunks (
+        id SERIAL PRIMARY KEY,
+        file VARCHAR(255) REFERENCES Documents(filename) ON DELETE CASCADE
+    );
+    """
+
+    connection = connect_to_db()
+    if connection:
+        try:
+            cursor = connection.cursor()
+            cursor.execute(create_documents_table)
+            cursor.execute(create_chunks_table)
+            connection.commit()
+            logging.info("Tables created successfully.")
+        except Exception as e:
+            logging.error(f"Error creating tables: {e}")
+        finally:
+            cursor.close()
+            connection.close()
 
 
 def add_document(filename, chunks):
