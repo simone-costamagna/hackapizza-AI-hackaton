@@ -3,6 +3,8 @@ import os.path
 DATA_FOLDER_PATH = 'data'
 MENU_FOLDER_PATH = f'{DATA_FOLDER_PATH}/Menu'
 MISC_FOLDER_PATH = f'{DATA_FOLDER_PATH}/Misc'
+DISH_MAPPING_PATH = os.path.join(MISC_FOLDER_PATH, "dish_mapping.json")
+DOMANDE_PATH = os.path.join(DATA_FOLDER_PATH, 'domande.csv')
 
 OUTPUT_FOLDER = 'output'
 
@@ -13,7 +15,11 @@ OUTPUT_JSON_TEMPLATE_FOLDER = os.path.join(OUTPUT_PREPROCESSING_FOLDER, 'json_te
 
 OUTPUT_KB_FOLDER = os.path.join(OUTPUT_FOLDER, 'kb')
 OUTPUT_KB_ENTITIES_FOLDER = os.path.join(OUTPUT_KB_FOLDER, 'entities')
+OUTPUT_KB_GRAPH_SCHEMA = os.path.join(OUTPUT_KB_FOLDER, 'graph_schema')
 OUTPUT_KB_CHROMA = os.path.join(OUTPUT_KB_FOLDER, 'chroma')
+
+OUTPUT_APP = os.path.join(OUTPUT_FOLDER, 'app')
+OUTPUT_DOMANDE = os.path.join(OUTPUT_APP, 'output.csv')
 
 CONTESTO = """
     Benvenuti nel Ciclo Cosmico 789, dove l'umanità ha superato non solo i confini del proprio sistema solare, ma anche

@@ -4,10 +4,10 @@ import logging
 import os
 from dotenv import load_dotenv
 from langchain_core.runnables import RunnablePassthrough
-from langchain_neo4j import Neo4jVector
+from langchain_neo4j import Neo4jVector, Neo4jGraph
 from neo4j import GraphDatabase
 from tqdm import tqdm
-from config import OUTPUT_KB_ENTITIES_FOLDER
+from config import OUTPUT_KB_ENTITIES_FOLDER, OUTPUT_KB_GRAPH_SCHEMA
 from knowledge_base.config import GRAPH_DB, TEMPLATE
 from knowledge_base.graph_db.prompts import PROMPT_EXTRACT_ENTITY
 from utils.wrapper import LLMWrapper, EmbeddingWrapper
@@ -129,7 +129,8 @@ def generate_node_queries(data):
 
             for ingrediente in piatto["Ingredienti"]:
                 queries.append(
-                    f"MERGE (ing:Ingrediente:Element {{Nome: '{escape_single_quotes(ingrediente['Nome'])}'}})"
+                    f"MERGE (ing:Ingrediente:Element {{Nome: '{escape_single_quotes(ingrediente['Nome'])}',"
+                    f"Provenienza: '{escape_single_quotes(ingrediente['Provenienza'])}'}})"
                 )
 
             for tecnica in piatto["TecnichePreparazione"]:
@@ -260,12 +261,24 @@ def create_embedding(status):
         username=NEO4J_USER,
         password=NEO4J_PASSWORD,
         index_name="index",
-        node_label="Element",
-        text_node_properties=["nome"],
-        embedding_node_property="nome_embedding"
+        node_label="Piatto",
+        text_node_properties=["EsperienzaVisiva", "EsperienzaSensoriale"],
+        embedding_node_property="embedding"
     )
 
     logging.info("Embedding created")
+
+
+def store_schema(status):
+    graph = Neo4jGraph(url=NEO4J_URI, username=NEO4J_USER, password=NEO4J_PASSWORD)
+    graph.refresh_schema()
+    schema = graph.schema
+
+    file_path = os.path.join(OUTPUT_KB_GRAPH_SCHEMA, 'schema.txt')
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(schema if isinstance(schema, str) else str(schema))
+
+    logging.info(f"Schema has been successfully stored")
 
 
 graph_db = (
@@ -273,4 +286,5 @@ graph_db = (
     | RunnablePassthrough.assign(queries=generate_queries)
     | RunnablePassthrough(execute_queries)
     | RunnablePassthrough(create_embedding)
+    | RunnablePassthrough(store_schema)
 )
