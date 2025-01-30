@@ -63,6 +63,8 @@ def load_document(file_path, document):
             markdown_content = file.read()
             chunks = splitter.split_text(markdown_content)
 
+
+
     if not document:
         add_document(filename, len(chunks))
     else:

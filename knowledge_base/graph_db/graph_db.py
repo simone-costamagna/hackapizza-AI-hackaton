@@ -99,48 +99,48 @@ def generate_node_queries(data):
     if isinstance(data, dict):
         ristorante = data["Ristorante"]
         queries.append(
-            f"MERGE (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome'])}', "
+            f"MERGE (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome']).lower()}', "
             f"AnnoApertura: '{ristorante['AnnoApertura']}', "
             f"LivelloLTK: '{ristorante['LivelloLTK']}'}})"
         )
 
         queries.append(
-            f"MERGE (p:Pianeta {{Nome: '{escape_single_quotes(ristorante['Pianeta'])}'}})"
+            f"MERGE (p:Pianeta {{Nome: '{escape_single_quotes(ristorante['Pianeta']).lower()}'}})"
         )
 
         chef = ristorante["Chef"]
         queries.append(
-            f"MERGE (c:Chef {{Nome: '{escape_single_quotes(chef['Nome'])}', "
-            f"Cognome: '{escape_single_quotes(chef['Cognome'])}'}})"
+            f"MERGE (c:Chef {{Nome: '{escape_single_quotes(chef['Nome']).lower()}', "
+            f"Cognome: '{escape_single_quotes(chef['Cognome']).lower()}'}})"
         )
 
         for cert in chef["Certificazioni"]:
             queries.append(
-                f"MERGE (cert:Certificazione {{Nome: '{escape_single_quotes(cert['Tipo'])}'}})"
+                f"MERGE (cert:Certificazione {{Nome: '{escape_single_quotes(cert['Tipo']).lower()}'}})"
             )
 
         for piatto in ristorante["Menu"]:
             queries.append(
-                f"MERGE (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto'])}', "
-                f"EsperienzaSensoriale: '{escape_single_quotes(piatto['EsperienzaSensoriale'])}', "
-                f"EsperienzaVisiva: '{escape_single_quotes(piatto['EsperienzaVisiva'])}', "
-                f"Note: '{escape_single_quotes(piatto['Note'])}'}})"
+                f"MERGE (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto']).lower()}', "
+                f"EsperienzaSensoriale: '{escape_single_quotes(piatto['EsperienzaSensoriale']).lower()}', "
+                f"EsperienzaVisiva: '{escape_single_quotes(piatto['EsperienzaVisiva']).lower()}', "
+                f"Note: '{escape_single_quotes(piatto['Note']).lower()}'}})"
             )
 
             for ingrediente in piatto["Ingredienti"]:
                 queries.append(
-                    f"MERGE (ing:Ingrediente:Element {{Nome: '{escape_single_quotes(ingrediente['Nome'])}',"
-                    f"Provenienza: '{escape_single_quotes(ingrediente['Provenienza'])}'}})"
+                    f"MERGE (ing:Ingrediente {{Nome: '{escape_single_quotes(ingrediente['Nome']).lower()}',"
+                    f"Provenienza: '{escape_single_quotes(ingrediente['Provenienza']).lower()}'}})"
                 )
 
             for tecnica in piatto["TecnichePreparazione"]:
                 queries.append(
-                    f"MERGE (tec:TecnicaPreparazione:Element {{Nome: '{escape_single_quotes(tecnica['Nome'])}'}})"
+                    f"MERGE (tec:TecnicaPreparazione {{Nome: '{escape_single_quotes(tecnica['Nome']).lower()}'}})"
                 )
     else:
         for item in data[0][1:]:
             queries.append(
-                f"MERGE (p:Pianeta {{Nome: '{escape_single_quotes(item)}'}})"
+                f"MERGE (p:Pianeta {{Nome: '{escape_single_quotes(item).lower()}'}})"
             )
 
     return queries
@@ -152,46 +152,46 @@ def generate_relationship_queries(data):
     if isinstance(data, dict):
         ristorante = data["Ristorante"]
         queries.append(
-            f"MATCH (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome'])}'}}), "
-            f"(p:Pianeta {{Nome: '{escape_single_quotes(ristorante['Pianeta'])}'}}) "
+            f"MATCH (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome']).lower()}'}}), "
+            f"(p:Pianeta {{Nome: '{escape_single_quotes(ristorante['Pianeta']).lower()}'}}) "
             f"MERGE (r)-[:SI_TROVA_SU]->(p)"
         )
 
         chef = ristorante["Chef"]
         queries.append(
-            f"MATCH (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome'])}'}}), "
-            f"(c:Chef {{Nome: '{escape_single_quotes(chef['Nome'])}', "
-            f"Cognome: '{escape_single_quotes(chef['Cognome'])}'}}) "
+            f"MATCH (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome']).lower()}'}}), "
+            f"(c:Chef {{Nome: '{escape_single_quotes(chef['Nome']).lower()}', "
+            f"Cognome: '{escape_single_quotes(chef['Cognome']).lower()}'}}) "
             f"MERGE (r)-[:HA_CHEF]->(c)"
         )
 
         for cert in chef["Certificazioni"]:
             queries.append(
-                f"MATCH (c:Chef {{Nome: '{escape_single_quotes(chef['Nome'])}', "
-                f"Cognome: '{escape_single_quotes(chef['Cognome'])}'}}), "
-                f"(cert:Certificazione {{Nome: '{escape_single_quotes(cert['Tipo'])}'}}) "
+                f"MATCH (c:Chef {{Nome: '{escape_single_quotes(chef['Nome']).lower()}', "
+                f"Cognome: '{escape_single_quotes(chef['Cognome']).lower()}'}}), "
+                f"(cert:Certificazione {{Nome: '{escape_single_quotes(cert['Tipo']).lower()}'}}) "
                 f"MERGE (c)-[:HA_CERTIFICAZIONE {{Livello: '{escape_single_quotes(cert['Livello'])}', "
                 f"AnnoConseguimento: '{cert['AnnoConseguimento']}'}}]->(cert)"
             )
 
         for piatto in ristorante["Menu"]:
             queries.append(
-                f"MATCH (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome'])}'}}), "
-                f"(pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto'])}'}}) "
+                f"MATCH (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome']).lower()}'}}), "
+                f"(pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto']).lower()}'}}) "
                 f"MERGE (r)-[:SERVE]->(pi)"
             )
 
             for ingrediente in piatto["Ingredienti"]:
                 queries.append(
-                    f"MATCH (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto'])}'}}), "
-                    f"(ing:Ingrediente {{Nome: '{escape_single_quotes(ingrediente['Nome'])}'}}) "
+                    f"MATCH (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto']).lower()}'}}), "
+                    f"(ing:Ingrediente {{Nome: '{escape_single_quotes(ingrediente['Nome']).lower()}'}}) "
                     f"MERGE (pi)-[:CONTIENE]->(ing)"
                 )
 
             for tecnica in piatto["TecnichePreparazione"]:
                 queries.append(
-                    f"MATCH (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto'])}'}}), "
-                    f"(tec:TecnicaPreparazione {{Nome: '{escape_single_quotes(tecnica['Nome'])}'}}) "
+                    f"MATCH (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto']).lower()}'}}), "
+                    f"(tec:TecnicaPreparazione {{Nome: '{escape_single_quotes(tecnica['Nome']).lower()}'}}) "
                     f"MERGE (pi)-[:PREPARATO_CON]->(tec)"
                 )
     else:
@@ -203,8 +203,8 @@ def generate_relationship_queries(data):
                 target_planet = items[j]
                 if source_planet != target_planet:
                     queries.append(
-                        f"MATCH (p1:Pianeta {{Nome: '{escape_single_quotes(source_planet)}'}}), "
-                        f"(p2:Pianeta {{Nome: '{escape_single_quotes(target_planet)}'}}) "
+                        f"MATCH (p1:Pianeta {{Nome: '{escape_single_quotes(source_planet).lower()}'}}), "
+                        f"(p2:Pianeta {{Nome: '{escape_single_quotes(target_planet).lower()}'}}) "
                         f"MERGE (p1)-[:DISTANZA {{valore: {distance}}}]->(p2)"
                     )
 

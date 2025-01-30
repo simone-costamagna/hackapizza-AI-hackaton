@@ -8,10 +8,6 @@ wrapper = LLMWrapper()
 wrapper.bind_tools([retrieve_functional_context, retrieve_technical_context])
 
 
-def log_researcher(status):
-    logging.info("Researcher started execution")
-
-
 chain = (
     prompt_researcher
     | wrapper.llm

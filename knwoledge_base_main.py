@@ -21,7 +21,7 @@ chain = (
     RunnablePassthrough(setup)
     | loader
     | graph_db
-    | vector_db
+    # | vector_db
 )
 
 res = chain.invoke({})

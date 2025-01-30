@@ -1,0 +1,4 @@
+Mettere tutto in minuscolo;
+Il responder se non trova nel dish_mapping la cosa giusta, deve fare una ricerca per somiglianza (potremmo anche inserire l'AI);
+Fargli eseguire un tool alla volta;
+Diminuire la dimensione dei chunks: This model's maximum context length is 128000 tokens. However, your messages resulted in 456056 tokens (455748 in the messages, 308 in the functions)

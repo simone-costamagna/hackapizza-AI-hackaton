@@ -3,7 +3,7 @@ from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_ibm import ChatWatsonx
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames
-from utils.models import MODELS, WATSONX
+from utils.models import MODELS, WATSONX, GPT_40
 
 load_dotenv()
 
@@ -32,7 +32,7 @@ def initialize_llm(model_id: str, temperature:float=0.0, max_tokens:int=None, ma
 
 
 class LLMWrapper:
-    def __init__(self, model_id:str='gpt-4o-mini', temperature:float=0.0, max_tokens:int=None, max_retries:int=2):
+    def __init__(self, model_id:str=GPT_40, temperature:float=0.0, max_tokens:int=None, max_retries:int=2):
         self._llm = initialize_llm(model_id, temperature, max_tokens, max_retries)
         self._parser = StrOutputParser()
 

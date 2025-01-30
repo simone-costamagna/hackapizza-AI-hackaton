@@ -1,10 +1,9 @@
 import csv
+import itertools
 import logging
 import os
 from dotenv import load_dotenv
 from langchain_core.runnables import RunnablePassthrough
-from tqdm import tqdm
-
 from app.graph import graph
 from config import OUTPUT_KB_GRAPH_SCHEMA, OUTPUT_APP, OUTPUT_DOMANDE, DOMANDE_PATH
 from log_config.log_config import setup_logging
@@ -23,7 +22,6 @@ def setup(status):
     status['output'] = []
 
     os.makedirs(OUTPUT_APP, exist_ok=True)
-    os.makedirs(OUTPUT_DOMANDE, exist_ok=True)
 
     return status
 
@@ -34,23 +32,42 @@ chain = (
 )
 
 with open(DOMANDE_PATH, mode='r', encoding='utf-8') as csv_file:
-    csv_question = csv.reader(csv_file)
-
-    next(csv_question)
+    csv_questions = list(csv.reader(csv_file))
 
     responses = [["row_id", "result"]]
-    for index, question in tqdm(enumerate(csv_question), desc="Answering questions..."):
+    for index, question in enumerate(csv_questions[13:]):
         try:
-            response = chain.invoke({"messages": ("user", question[0])})
+            logging.info(f"Started answering n° {index + 1}: {question[0]}")
+            response = chain.invoke({"messages": ("user", question[0].lower())})
             if len(response['output']) > 0:
-                result = ",".join(map(str, response['output']))
+                # Convert all values to strings before joining
+                result = ",".join(str(val) for val in response['output'])
+                responses.append([index + 1, result])
             else:
-                result = "50"
-            responses.append([index+1, result])
+                responses.append([index + 1, "50"])
         except Exception as e:
             logging.error(f"Error for question {question} at index {index}: {e}")
-            responses.append([index, "[50]"])  # Gestione degli errori
+            responses.append([index + 1, "50"])
 
-    with open(OUTPUT_DOMANDE, mode='w', encoding='utf-8', newline='') as csv_file:
-        csv_writer = csv.writer(csv_file)
-        csv_writer.writerows(responses)
+        logging.info(f"Final response: {responses[-1]}\n-----------------------------------------------------------------------------------------------------------------------\n")
+
+    with open(OUTPUT_DOMANDE, mode='w', encoding='utf-8', newline='') as csv_file_output:
+        # Create a custom dialect for selective quoting
+        class CustomDialect(csv.excel):
+            quoting = csv.QUOTE_NONE
+            quotechar = '"'
+            delimiter = ','
+
+
+        # Create a custom writer that only quotes the result column
+        writer = csv.writer(csv_file_output, dialect=CustomDialect)
+
+        # Write header without quotes
+        writer.writerow(responses[0])
+
+        # Write data rows with custom quoting
+        for row in responses[1:]:
+            # Convert row_id to string without quotes, and add quotes to result manually
+            formatted_row = [str(row[0]), f'"{row[1]}"']
+            # Use writerow with custom delimiter to avoid automatic quoting
+            csv_file_output.write(f"{formatted_row[0]},{formatted_row[1]}\n")

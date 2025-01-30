@@ -38,11 +38,9 @@ def retrieve_functional_context(question: str, k: int) -> str:
         str: I chunks di contesto recuperati, concatenati e formattati come stringa.
     """
     def search_functional_context(question, k):
-        logging.info(f'Search Vector db tool has been invoked. Question: {question}; k: {k}')
+        logging.info(f'Vector db tool has been invoked. Question: {question}; k: {k}')
 
         chunks = search(question, k)
-
-        logging.info(f"Retrieved finished: len(chunks) chunks retrieved.")
 
         context = 'Vector DB content:\n'
         for index, document in enumerate(chunks):
@@ -50,7 +48,7 @@ def retrieve_functional_context(question: str, k: int) -> str:
             context += f"{index+1}) {document.page_content}\n"
         context += "\n"
 
-        logging.info(f"Vector Db context retrieved: {context[:min(50, len(context))]}...")
+        logging.info(f"Vector Db tool finished. {len(chunks)} chunks retrieved.")
 
         return context
 
@@ -70,7 +68,7 @@ def retrieve_technical_context(query: str) -> str:
         str: Risultato della query formattato come stringa leggibile.
     """
     def search_technical_context(query):
-        logging.info(f'Search Graph db tool has been invoked. Query: {query}')
+        logging.info(f'Graph db tool has been invoked. Query: {query}')
 
         results = []
         try:
@@ -83,15 +81,13 @@ def retrieve_technical_context(query: str) -> str:
         finally:
             neo4j_driver.close()
 
-        logging.info(f"Retrieved finished: {len(results)} results retrieved.")
-
         context = 'Graph DB content:\n'
         for index, result in enumerate(results):
             # Append the page_content to the combined string with a separator
             context += f"{index+1}) {result}\n"
         context += "\n"
 
-        logging.info(f"Graph Db context retrieved: {context[:min(50, len(context))]}...")
+        logging.info(f"Graph db tool finished. {len(results)} results retrieved.")
 
         return context
 
