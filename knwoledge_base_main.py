@@ -20,8 +20,8 @@ def setup(status):
 chain = (
     RunnablePassthrough(setup)
     | loader
-    | graph_db
-    # | vector_db
+    # | graph_db
+    | vector_db
 )
 
 res = chain.invoke({})

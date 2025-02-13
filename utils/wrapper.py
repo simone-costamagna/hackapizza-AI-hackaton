@@ -1,9 +1,10 @@
 from dotenv import load_dotenv
+from langchain_aws import ChatBedrock
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_ibm import ChatWatsonx
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames
-from utils.models import MODELS, WATSONX, GPT_40
+from utils.models import MODELS, WATSONX, GPT_40, GPT_40_MINI, BEDROCK
 
 load_dotenv()
 
@@ -16,8 +17,16 @@ def initialize_llm(model_id: str, temperature:float=0.0, max_tokens:int=None, ma
         llm = ChatWatsonx(
             model_id=model_id,
             url="https://us-south.ml.cloud.ibm.com",
-            project_id="dbf765e8-6f23-4e65-9fba-4ec44d167f0f",
+            project_id="7f5b8a87-b946-4930-ae58-bfa1196bf491",
             params=parameters,
+        )
+    elif model_id in MODELS[BEDROCK]:
+        llm = ChatBedrock(
+            model_id=model_id,
+            model_kwargs={
+                "temperature": temperature,
+                "max_tokens": max_tokens,
+            },
         )
     else:
         llm = ChatOpenAI(

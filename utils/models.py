@@ -1,11 +1,15 @@
 WATSONX = "WATSONX"
-LLAMA_3 = "meta-llama/llama-3-3-70b-instruct"
+MISTRAL = "mistralai/mistral-large"
+
+BEDROCK = "BEDROCK"
+CLAUDE_SONNET_3_5 = ""
 
 OPENAI = "OPENAI"
 GPT_40 = "gpt-4o"
 GPT_40_MINI = "gpt-4o-mini"
 
 MODELS = {
-    WATSONX: [LLAMA_3],
+    WATSONX: [MISTRAL],
+    BEDROCK: [CLAUDE_SONNET_3_5],
     OPENAI: [GPT_40, GPT_40_MINI]
 }

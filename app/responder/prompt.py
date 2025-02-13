@@ -14,18 +14,26 @@ prompt_responder = ChatPromptTemplate.from_messages(
             - Estrai una struttura dati nel formato richiesto.
             - Assicurati che i nomi dei piatti siano copiati esattamente come nell'input, senza alterazioni.\n\n
 
-            Esempio:
-            [Input]
-            "I piatti che includono X come ingrediente sono:
-            - y,
-            - z,
-            - k."
+            Esempio:\n
+            [Input]\n
+            "I piatti che includono [INGREDIENT_NAME] come ingrediente sono:\n    
+            - [PLATE_A],\n
+            - [PLATE_B],\n
+            - [PLATE_C]"\n
 
-            [Output]
-            Output(piatti=[
-                Piatto(nome='y'),
-                Piatto(nome='z'),
-                Piatto(nome='k')
+            [Output]\n
+            Output(piatti=[\n
+                Piatto(nome='PLATE_A'),\n
+                Piatto(nome='PLATE_B'),\n
+                Piatto(nome='PLATE_C')\n
+            ])\n
+            
+            [Input]\n
+            [PLATE_A]\n
+
+            [Output]\n
+            Output(piatti=[\n
+                Piatto(nome='PLATE_A')\n
             ])
             '''
         ),

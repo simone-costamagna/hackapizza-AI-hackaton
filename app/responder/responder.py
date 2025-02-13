@@ -24,6 +24,9 @@ wrapper.set_structured_output(Output)
 
 def map_results(output: Output):
     ids = []
+
+    logging.debug(f"Responder Map results: {output}")
+
     for plate in output.plates:
         try:
             ids.append(dish_mapping[plate.name.lower()])
@@ -40,7 +43,7 @@ def map_results(output: Output):
             logging.info(f"Key {plate.name.lower()} not found. Found {best_match} with similarity")
             ids.append(dish_mapping[best_match])
 
-    return ids
+    return list(dict.fromkeys(ids)) # remove duplicates
 
 
 

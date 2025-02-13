@@ -1,6 +1,8 @@
 import logging
 import os
+import re
 from dotenv import load_dotenv
+from langchain.chains.graph_qa import cypher
 from langchain_core.tools import tool
 from neo4j import GraphDatabase
 from knowledge_base.vector_db.rag_utils import search
@@ -45,9 +47,10 @@ def retrieve_functional_context(question: str, k: int) -> str:
         context = 'Vector DB content:\n'
         for index, document in enumerate(chunks):
             # Append the page_content to the combined string with a separator
-            context += f"{index+1}) {document.page_content}\n"
+            context += f"{index+1}) {document.page_content.lower()}\n"
         context += "\n"
 
+        logging.debug(f"Vector Db tool output: {context}")
         logging.info(f"Vector Db tool finished. {len(chunks)} chunks retrieved.")
 
         return context
@@ -56,13 +59,13 @@ def retrieve_functional_context(question: str, k: int) -> str:
 
 
 @tool
-def retrieve_technical_context(query: str) -> str:
+def retrieve_technical_context(query_cypher: str) -> str:
     """
     Tool che esegue una query cypher su un database a grafo per recuperare informazioni strutturate
     da una base di conoscenza.\n
 
     Args:
-        query (str): Query Cypher da eseguire sul database.
+        query_cypher (str): Query Cypher da eseguire sul database.
 
     Returns:
         str: Risultato della query formattato come stringa leggibile.
@@ -70,6 +73,7 @@ def retrieve_technical_context(query: str) -> str:
     def search_technical_context(query):
         logging.info(f'Graph db tool has been invoked. Query: {query}')
 
+        query = re.sub(r"'([^']*)'", lambda m: f"'{m.group(1).lower()}'", query)
         results = []
         try:
             with neo4j_driver.session() as session:
@@ -78,6 +82,7 @@ def retrieve_technical_context(query: str) -> str:
                     results.append(record.data())
         except Exception as e:
             logging.error(f"An error occurred while executing the query: {e}")
+            return f"Error: invalid query cypher: {str(e)}"
         finally:
             neo4j_driver.close()
 
@@ -87,11 +92,12 @@ def retrieve_technical_context(query: str) -> str:
             context += f"{index+1}) {result}\n"
         context += "\n"
 
-        logging.info(f"Graph db tool finished. {len(results)} results retrieved.")
+        logging.debug(f"Graph Db output: {results}")
+        logging.info(f"Graph Db tool finished. {len(results)} results retrieved.")
 
         return context
 
-    return search_technical_context(query)
+    return search_technical_context(query_cypher)
 
 
 tools = [retrieve_functional_context, retrieve_technical_context]
