@@ -126,7 +126,6 @@ prompt_researcher = ChatPromptTemplate.from_messages(
             ...\n\n  
             
             [Input]\n
-            "Quali piatti usano la sferificazione filamentare a molecole vibrazionali, ma evitano la decostruzione magnetica risonante?"\n
             "Quali piatti usano la [$NOME_A], ma evitano la [$NOME_B]?"\n
             [Output]\n
             1. Cerco sul vector database i nomi delle entità nella domanda [$NOME_A] e [$NOME_B] per capire se sono 

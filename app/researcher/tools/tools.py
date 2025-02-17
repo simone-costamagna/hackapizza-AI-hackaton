@@ -83,8 +83,6 @@ def retrieve_technical_context(query_cypher: str) -> str:
         except Exception as e:
             logging.error(f"An error occurred while executing the query: {e}")
             return f"Error: invalid query cypher: {str(e)}"
-        finally:
-            neo4j_driver.close()
 
         context = 'Graph DB content:\n'
         for index, result in enumerate(results):
