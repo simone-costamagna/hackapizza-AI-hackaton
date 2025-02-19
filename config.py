@@ -1,5 +1,9 @@
 import os.path
 
+from utils.models import CLAUDE_3_5_SONNET, GPT_40
+
+CURRENT_MODEL = GPT_40
+
 DATA_FOLDER_PATH = 'data'
 MENU_FOLDER_PATH = f'{DATA_FOLDER_PATH}/Menu'
 MISC_FOLDER_PATH = f'{DATA_FOLDER_PATH}/Misc'

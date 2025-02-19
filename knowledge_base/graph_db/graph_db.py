@@ -8,7 +8,7 @@ from langchain_neo4j import Neo4jVector, Neo4jGraph
 from neo4j import GraphDatabase
 from tqdm import tqdm
 from config import OUTPUT_KB_ENTITIES_FOLDER, OUTPUT_KB_GRAPH_SCHEMA
-from knowledge_base.config import GRAPH_DB, TEMPLATE
+from knowledge_base.config import GRAPH_DB, TEMPLATE, EXAMPLE_PATH
 from knowledge_base.graph_db.prompts import PROMPT_EXTRACT_ENTITY
 from utils.wrapper import LLMWrapper, EmbeddingWrapper
 
@@ -61,8 +61,16 @@ def extract_entity(status):
                     entities = json.load(json_file)
                     entities = replace_none(entities)
             else:
+                try:
+                    with open(EXAMPLE_PATH, "r", encoding="utf-8") as f:
+                        examples = f.read()
+                except UnicodeDecodeError as ex:
+                    with open(EXAMPLE_PATH, "r", encoding="ISO-8859-1") as f:
+                        examples = f.read()
+
                 input = {
                     "template": template,
+                    "example": examples.replace("{", "{{").replace("}", "}}"),
                     "documento": file[1]
                 }
 
@@ -100,8 +108,7 @@ def generate_node_queries(data):
         ristorante = data["Ristorante"]
         queries.append(
             f"MERGE (r:Ristorante {{Nome: '{escape_single_quotes(ristorante['Nome']).lower()}', "
-            f"AnnoApertura: '{ristorante['AnnoApertura']}', "
-            f"LivelloLTK: '{ristorante['LivelloLTK']}'}})"
+            f"AnnoApertura: '{ristorante['AnnoApertura']}'}})"
         )
 
         queries.append(
@@ -121,10 +128,7 @@ def generate_node_queries(data):
 
         for piatto in ristorante["Menu"]:
             queries.append(
-                f"MERGE (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto']).lower()}', "
-                f"EsperienzaSensoriale: '{escape_single_quotes(piatto['EsperienzaSensoriale']).lower()}', "
-                f"EsperienzaVisiva: '{escape_single_quotes(piatto['EsperienzaVisiva']).lower()}', "
-                f"Note: '{escape_single_quotes(piatto['Note']).lower()}'}})"
+                f"MERGE (pi:Piatto {{Nome: '{escape_single_quotes(piatto['NomePiatto']).lower()}'}})"
             )
 
             for ingrediente in piatto["Ingredienti"]:

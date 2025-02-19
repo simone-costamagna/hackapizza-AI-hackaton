@@ -1,0 +1,464 @@
+{
+    "Ristorante": {
+        "Nome": "L'Etere del Gusto",
+        "Pianeta": "Pandora",
+        "Chef": {
+            "Nome": "Pierino",
+            "Cognome": "Temporali",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 5,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Magnetica",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Antimateria",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Galassia di Sapori Eterei",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Nebulosa",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Liane di plasmodio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore con Flusso di Particelle Isoarmoniche"
+                    },
+                    {
+                        "Nome": "Forno Dinamico Inversionale"
+                    },
+                    {
+                        "Nome": "Congelamento Bio-Luminiscente Sincronico"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio attraverso praterie luminescenti di un universo in transizione.",
+                "EsperienzaVisiva": "Una danza di sfumature e sentori che delizieranno i vostri occhi.",
+                "Note": "Questo piatto non vi lascerà soltanto sazi, ma eternamente trasportati verso una dimensione di gusto che si estende oltre l’infinito."
+            },
+            {
+                "NomePiatto": "Il Risveglio del Drago Celeste",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spore Quantiche",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Prisma Stellare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    },
+                    {
+                        "Nome": "Fermentazione Quantico Biometrica"
+                    },
+                    {
+                        "Nome": "Sinergia Elettro-Osmotica Programmabile"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un risveglio sensoriale che sfida il tempo.",
+                "EsperienzaVisiva": "Un'ombrosa Essenza di Tachioni finale infonde energia al vostro palato.",
+                "Note": "Un piatto che non è solo un pasto, ma una sinfonia cosmica."
+            },
+            {
+                "NomePiatto": "Abbraccio del Cosmo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore con Flusso di Particelle Isoarmoniche"
+                    },
+                    {
+                        "Nome": "Microonde Entropiche Sincronizzate"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio attraverso la molteplicità del gusto.",
+                "EsperienzaVisiva": "Una spruzzata di Polvere di Stelle scintillante dona uno spettacolo visivo.",
+                "Note": "Ogni forchettata è un'esperienza."
+            },
+            {
+                "NomePiatto": "Cosmic Harmony Infusion",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Grigliatura Plasma Sintetico Risonante"
+                    },
+                    {
+                        "Nome": "Sferificazione Filamentare a Molecole Vibrazionali"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio culinario che vi trasporterà attraverso le galassie.",
+                "EsperienzaVisiva": "Ogni boccone è una poesia di sensazioni.",
+                "Note": "Questa esperienza non è solo un pasto, ma una sinfonia universale."
+            },
+            {
+                "NomePiatto": "Concordanza Cosmica - Sinfonia di Sapori Multidimensionali",
+                "Ingredienti": [
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    },
+                    {
+                        "Nome": "Grigliatura Plasma Sintetico Risonante"
+                    },
+                    {
+                        "Nome": "Affumicatura Psionica Sensoriale"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio attraverso oceani d'infinito e terre sconosciute.",
+                "EsperienzaVisiva": "Un'ombrosa Essenza di Tachioni finale infonde energia al vostro palato.",
+                "Note": "Un piatto che non solo nutre il corpo, ma espande lo spirito."
+            },
+            {
+                "NomePiatto": "Universo Incantato: Sinfonia dei Gusti Cosmogonici",
+                "Ingredienti": [
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Nebulosa",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Speziaria",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Microonde Entropiche Sincronizzate"
+                    },
+                    {
+                        "Nome": "Proiezioni Olografiche Quantum Fluttuanti"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio culinario al di là delle stelle.",
+                "EsperienzaVisiva": "Una sinfonia di gusto che oltrepassa i limiti dell'immaginazione.",
+                "Note": "Un piatto che non solo nutre il corpo, ma espande lo spirito."
+            },
+            {
+                "NomePiatto": "Eclissi Quantica: Viaggio nei Reami del Gusto",
+                "Ingredienti": [
+                    {
+                        "Nome": "Funghi Orbitali",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Sottovuoto Antimateria"
+                    },
+                    {
+                        "Nome": "Sferificazione Filamentare a Molecole Vibrazionali"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio attraverso tempo e spazio.",
+                "EsperienzaVisiva": "Un omaggio alla connessione universale tra tutti i sapori.",
+                "Note": "Benvenuti nel futuro del gusto."
+            },
+            {
+                "NomePiatto": "Sinfonia Multiversale in Otto Movimenti",
+                "Ingredienti": [
+                    {
+                        "Nome": "Brodo di Plasmodio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Liane di Plasmodio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Rosa di Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Risotto di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Tartare di Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Impasto a Campi Magnetici Dualistici"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Psionica"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un invito a riscrivere le vostre percezioni culinarie.",
+                "EsperienzaVisiva": "Un elaborato coreografia di sapori intergalattici.",
+                "Note": "Benvenuti nell'universo gastronomico del “L'Infinito Sapore”."
+            },
+            {
+                "NomePiatto": "La Sinfonia dell'Universo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Salsa Szechuan",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Sinergia Psionica"
+                    },
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un'esperienza che elevi il gusto ben oltre i confini della realtà conosciuta.",
+                "EsperienzaVisiva": "Un invito a chi cerca un'esperienza che elevi il gusto.",
+                "Note": "Un piatto che trasforma il vostro palato in un'orchestra cosmica di sapori."
+            },
+            {
+                "NomePiatto": "Sinfonia dell'Universo Morente",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carpaccio di Funghi Orbitali",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Memoria",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Liane di Plasmodio",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    },
+                    {
+                        "Nome": "Decostruzione Atomica a Strati Energetici"
+                    },
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio attraverso le distese del cosmo.",
+                "EsperienzaVisiva": "Un morire magnifico che si racconta in ogni boccone.",
+                "Note": "Venite e scoprite il potere del gusto di connettere l'infinito."
+            }
+        ],
+        "AnnoApertura": null,
+        "LivelloLTK": 3
+    }
+}

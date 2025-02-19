@@ -20,6 +20,10 @@ neo4j_driver = GraphDatabase.driver(
 )
 
 
+def to_lowercase(match):
+    return f"{match.group(1)}{match.group(2).lower()}{match.group(3)}"
+
+
 @tool
 def retrieve_functional_context(question: str, k: int) -> str:
     """
@@ -65,15 +69,19 @@ def retrieve_technical_context(query_cypher: str) -> str:
     da una base di conoscenza.\n
 
     Args:
-        query_cypher (str): Query Cypher da eseguire sul database.
+        query_cypher (str): Query Cypher da eseguire sul database. I nomi propri devono essere in minuscolo con LOWER()
 
     Returns:
         str: Risultato della query formattato come stringa leggibile.
     """
     def search_technical_context(query):
-        logging.info(f'Graph db tool has been invoked. Query: {query}')
+        logging.info(f'Graph db tool has been invoked.')
+        logging.info(f"Query: {query}")
 
-        query = re.sub(r"'([^']*)'", lambda m: f"'{m.group(1).lower()}'", query)
+        pattern = r'(["\'])(.*?)(\1)'
+        # query_ = re.sub(pattern, to_lowercase, query)
+        # logging.info(f"Updated Query: {query_}")
+
         results = []
         try:
             with neo4j_driver.session() as session:

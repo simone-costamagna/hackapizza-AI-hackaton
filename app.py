@@ -2,6 +2,8 @@ import csv
 import itertools
 import logging
 import os
+import sys
+
 from dotenv import load_dotenv
 from langchain_core.runnables import RunnablePassthrough
 from app.graph import graph
@@ -35,9 +37,10 @@ with open(DOMANDE_PATH, mode='r', encoding='utf-8') as csv_file:
     csv_questions = list(csv.reader(csv_file))
 
     responses = [["row_id", "result"]]
-    for index, question in enumerate(csv_questions[40:45]):
+    start = 72
+    for index, question in enumerate(csv_questions[start:]):
         try:
-            logging.info(f"Started answering num {index + 1}: {question[0]}")
+            logging.info(f"Started answering num {index + start}: {question[0]}")
             response = chain.invoke({"messages": ("user", question[0])})
             if len(response['output']) > 0:
                 # Convert all values to strings before joining

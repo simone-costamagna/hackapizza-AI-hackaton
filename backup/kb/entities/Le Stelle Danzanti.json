@@ -1,0 +1,391 @@
+{
+    "Ristorante": {
+        "Nome": "Le Stelle Danzanti",
+        "Pianeta": null,
+        "Chef": {
+            "Nome": "Asteria",
+            "Cognome": "Nova",
+            "Certificazioni": [
+                {
+                    "Tipo": "LTK",
+                    "Livello": 4,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Rivisitazione del Kraken sotto Molecole",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spezie Melange",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Crononite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Grigliatura a Energia Stellare DiV"
+                    },
+                    {
+                        "Nome": "Amalgamazione Sintetica Molecolare"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore termocinetico multiplo"
+                    }
+                ],
+                "EsperienzaSensoriale": "un evocativo incontro con l'universo stesso",
+                "EsperienzaVisiva": "una celebrazione della cucina che trasforma l'eterno balletto dei cieli in una degustazione sublime e irripetibile",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia Celestiale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Grigliatura Psionica Dinamica Ritmica"
+                    },
+                    {
+                        "Nome": "Cottura in microonde entropiche sincronizzate"
+                    }
+                ],
+                "EsperienzaSensoriale": "un evento olistico grazie ai Petali di Eco",
+                "EsperienzaVisiva": "un invito a esplorare l'ignoto attraverso i sapori che sospendono il tempo",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia Cosmica di Sapori",
+                "Ingredienti": [
+                    {
+                        "Nome": "Liane di Plasmodio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Risonante Simbiotico"
+                    },
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    }
+                ],
+                "EsperienzaSensoriale": "un'esperienza transcendentale dove i sapori dell'universo convergono",
+                "EsperienzaVisiva": "un invito a esplorare l'ignoto attraverso i sapori",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Galassia di Sogni Cosmogastronomici",
+                "Ingredienti": [
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Prisma Stellare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Risonante Simbiotico"
+                    },
+                    {
+                        "Nome": "Grigliatura Elettro-Molecolare a Spaziatura Variabile"
+                    }
+                ],
+                "EsperienzaSensoriale": "un elogio al cosmo stesso",
+                "EsperienzaVisiva": "un abbraccio luminoso",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Entropia Eterna",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Bollitura termografica a rotazione veloce"
+                    }
+                ],
+                "EsperienzaSensoriale": "una celebrazione dell'infinito intreccio di sapori",
+                "EsperienzaVisiva": "un'ode all'interconnessione cosmica",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Valzer delle Stelle",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Pulsar",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spore Quantiche",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Frugale Energeticamente Negativa"
+                    }
+                ],
+                "EsperienzaSensoriale": "una connessione profonda con le origini dell'universo",
+                "EsperienzaVisiva": "un'esperienza culinaria unica",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia di Galassie Riflesse",
+                "Ingredienti": [
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    },
+                    {
+                        "Nome": "Sferificazione Cromatica Interdimensionale"
+                    },
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    }
+                ],
+                "EsperienzaSensoriale": "un viaggio attraverso le stelle culinarie",
+                "EsperienzaVisiva": "un connubio tra scienza e poesia",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Valzer Cosmico di Asteria",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Frugale Energeticamente Negativa"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Risonante Simbiotico"
+                    }
+                ],
+                "EsperienzaSensoriale": "un invito a danzare tra le stelle",
+                "EsperienzaVisiva": "ogni boccone racconta una storia",
+                "Note": null
+            }
+        ],
+        "AnnoApertura": null,
+        "LivelloLTK": 4
+    }
+}

@@ -4,12 +4,14 @@ from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_ibm import ChatWatsonx
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames
-from utils.models import MODELS, WATSONX, GPT_40, GPT_40_MINI, BEDROCK
+
+from config import CURRENT_MODEL
+from utils.models import MODELS, WATSONX, GPT_40, GPT_40_MINI, BEDROCK, CLAUDE_3_5_SONNET, MISTRAL
 
 load_dotenv()
 
 
-def initialize_llm(model_id: str, temperature:float=0.0, max_tokens:int=None, max_retries:int=2):
+def initialize_llm(model_id: str, temperature:float=0.1, max_tokens:int=None, max_retries:int=2):
     if model_id in MODELS[WATSONX]:
         parameters = {
             GenTextParamsMetaNames.TEMPERATURE: temperature,
@@ -23,10 +25,11 @@ def initialize_llm(model_id: str, temperature:float=0.0, max_tokens:int=None, ma
     elif model_id in MODELS[BEDROCK]:
         llm = ChatBedrock(
             model_id=model_id,
+            streaming=False,
             model_kwargs={
                 "temperature": temperature,
-                "max_tokens": max_tokens,
-            },
+                "max_tokens": 8192,
+            }
         )
     else:
         llm = ChatOpenAI(
@@ -41,7 +44,7 @@ def initialize_llm(model_id: str, temperature:float=0.0, max_tokens:int=None, ma
 
 
 class LLMWrapper:
-    def __init__(self, model_id:str=GPT_40, temperature:float=0.0, max_tokens:int=None, max_retries:int=2):
+    def __init__(self, model_id:str=CURRENT_MODEL, temperature:float=0.1, max_tokens:int=None, max_retries:int=2):
         self._llm = initialize_llm(model_id, temperature, max_tokens, max_retries)
         self._parser = StrOutputParser()
 

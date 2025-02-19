@@ -1,0 +1,469 @@
+{
+    "Ristorante": {
+        "Nome": "L'Infinito in un Boccone",
+        "Pianeta": "Krypton",
+        "Chef": {
+            "Nome": "Alessandro",
+            "Cognome": "Quantum",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 7,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "LTK",
+                    "Livello": 6,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Universo in Fluttuazione",
+                "Ingredienti": [
+                    {
+                        "Nome": "Vero Ghiaccio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Fermentazione Quantica a Strati Multiversali"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Multirealità Collassante"
+                    },
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    }
+                ],
+                "EsperienzaSensoriale": "un viaggio gastronomico senza tempo",
+                "EsperienzaVisiva": "un gioco di luci che richiama la maestosa propagazione delle stelle",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia Astrale - Risotto Multiversale con Risacca Celeste",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Brodo di Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Pulsar",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Multirealità Collassante"
+                    },
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    },
+                    {
+                        "Nome": "Congelazione Iperdimensionalmente Stratificata"
+                    }
+                ],
+                "EsperienzaSensoriale": "un’esperienza visiva e gustativa come nessun’altra",
+                "EsperienzaVisiva": "illuminata da delicate linee di Luce (I)",
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia Temporale Galattica",
+                "Ingredienti": [
+                    {
+                        "Nome": "Colonies di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Nebulite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Bacche di Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Sale Temporale",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affettamento a Pulsazioni Quantistiche"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto"
+                    },
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    }
+                ],
+                "EsperienzaSensoriale": "un'esperienza sensoriale che trasforma la cena in un eterno attimo di pura magia culinaria",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia del Multiverso di Gusto",
+                "Ingredienti": [
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    },
+                    {
+                        "Nome": "Decostruzione Interdimensionale Lovecraftiana"
+                    },
+                    {
+                        "Nome": "Fermentazione Psionica Energetica"
+                    }
+                ],
+                "EsperienzaSensoriale": "un esperienza gastronomica che non è solo un pasto, ma un portale verso le vastità del multiverso",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia Cosmica",
+                "Ingredienti": [
+                    {
+                        "Nome": "Shard di Prisma Stellare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro caramellato",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Frugale Energeticamente Negativa"
+                    },
+                    {
+                        "Nome": "Affettamento a Pulsazioni Quantistiche"
+                    }
+                ],
+                "EsperienzaSensoriale": "un'esperienza che trascende i confini",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Danza Cosmica al Crepuscolo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Multirealità Collassante"
+                    },
+                    {
+                        "Nome": "Fermentazione Quantico Biometrica"
+                    }
+                ],
+                "EsperienzaSensoriale": "un viaggio tra le pieghe più nascoste dell'universo",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Sinfonia Astrale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Saltare in Padella Realtà Energetiche Parallele"
+                    }
+                ],
+                "EsperienzaSensoriale": "una danza magistrale tra arte, scienza e la magia eterna dell’universo",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Dimensioni di Sapori Infusi",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Nebulosa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Idro-Cristallizzazione Sonora Quantistica"
+                    },
+                    {
+                        "Nome": "Affumicatura Temporale Risonante"
+                    },
+                    {
+                        "Nome": "Fermentazione Psionica Energetica"
+                    }
+                ],
+                "EsperienzaSensoriale": "una celebrazione della volta celeste nel palato",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Cosmos Culinary Symphony",
+                "Ingredienti": [
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Gravità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affettamento a Pulsazioni Quantistiche"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Frugale Energeticamente Negativa"
+                    }
+                ],
+                "EsperienzaSensoriale": "un invito a esplorare l'universo culinario",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Portale delle Meraviglie",
+                "Ingredienti": [
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uovo di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Frugale Energeticamente Negativa"
+                    },
+                    {
+                        "Nome": "Affettamento a Pulsazioni Quantistiche"
+                    }
+                ],
+                "EsperienzaSensoriale": "un'esperienza gastronomica al confine tra scienza, arte e magia",
+                "EsperienzaVisiva": null,
+                "Note": null
+            }
+        ],
+        "AnnoApertura": null,
+        "LivelloLTK": 6
+    }
+}

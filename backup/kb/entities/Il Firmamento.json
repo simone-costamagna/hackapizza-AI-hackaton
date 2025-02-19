@@ -1,0 +1,356 @@
+{
+    "Ristorante": {
+        "Nome": "Il Firmamento",
+        "Pianeta": "Ego",
+        "Chef": {
+            "Nome": "Alessio",
+            "Cognome": "Stellaris",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 4,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravità",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Magnetismo",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Antimateria",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Galassia di Fusilli Sferici alla Risonanza Crononica",
+                "Ingredienti": [
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Salsa Szechuan",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Crononite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Impasto a Campi Magnetici Dualistici"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un'esperienza gastronomica che sfida le leggi del tempo e della spazio.",
+                "EsperienzaVisiva": "Atmosfere plasmate dalla Luce II.",
+                "Note": "Il nostro chef Alessio ha deciso di modificare la ricetta tradizionale, evitando la classica marinatura."
+            },
+            {
+                "NomePiatto": "Galassia Rinascente",
+                "Ingredienti": [
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uovo di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne delle Teste di Idra",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    },
+                    {
+                        "Nome": "Bollitura Entropica Sincronizzata"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio culinario attraverso l'universo.",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Mandragora e Radici",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Gravità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Congelamento Bio-Luminiscente Sincronico"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Bioma Sintetico"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Pulsar Magnetica"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio sensoriale senza precedenti.",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Galaxia Rinasciata",
+                "Ingredienti": [
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Modellatura Onirica Tetrazionale"
+                    },
+                    {
+                        "Nome": "Surgelamento Antimaterico a Risonanza Inversa"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un'ode all'universo in un piatto.",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Cosmic Harmony",
+                "Ingredienti": [
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Gravità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    },
+                    {
+                        "Nome": "Decostruzione Atomica a Strati Energetici"
+                    },
+                    {
+                        "Nome": "Affumicatura Psionica Sensoriale"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio straordinario attraverso l'essenza stessa del cosmo.",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Nebulosa di Sapori Quantici",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi Orbitali",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Vuoto",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Nebulite",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Grigliatura Elettro-Molecolare a Spaziatura Variabile"
+                    },
+                    {
+                        "Nome": "Decostruzione Magnetica Risonante"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un'esperienza culinaria multisensoriale.",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Galassia in Tavola: Sinfonia dei Sensi",
+                "Ingredienti": [
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spezie Melange",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore con Flusso di Particelle Isoarmoniche"
+                    },
+                    {
+                        "Nome": "Congelamento Bio-Luminiscente Sincronico"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Pulsar Magnetica"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio culinario senza pari.",
+                "EsperienzaVisiva": null,
+                "Note": null
+            },
+            {
+                "NomePiatto": "Galassie alla Spirale di Vento con Sfera di Ghiaccio Eterno",
+                "Ingredienti": [
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Marinatura Psionica"
+                    }
+                ],
+                "EsperienzaSensoriale": "Un viaggio attraverso le meraviglie dell'universo.",
+                "EsperienzaVisiva": null,
+                "Note": null
+            }
+        ],
+        "AnnoApertura": null,
+        "LivelloLTK": 4
+    }
+}

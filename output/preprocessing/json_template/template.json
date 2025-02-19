@@ -26,13 +26,9 @@
                     {
                         "Nome": "string"
                     }
-                ],
-                "EsperienzaSensoriale": "string",
-                "EsperienzaVisiva": "string",
-                "Note": "string"
+                ]
             }
         ],
-        "AnnoApertura": "integer",
-        "LivelloLTK": "integer"
+        "AnnoApertura": "integer"
     }
 }

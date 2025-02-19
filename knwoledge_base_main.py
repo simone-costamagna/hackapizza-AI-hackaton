@@ -20,7 +20,7 @@ def setup(status):
 chain = (
     RunnablePassthrough(setup)
     | loader
-    # | graph_db
+    | graph_db
     | vector_db
 )
 

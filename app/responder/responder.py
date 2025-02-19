@@ -2,10 +2,13 @@ import json
 import logging
 
 from Levenshtein import distance
+from langchain_core.messages import HumanMessage
+from langchain_core.runnables import RunnablePassthrough
 from pydantic import BaseModel, Field
 from app.agent import Agent
 from app.responder.prompt import prompt_responder
-from config import DISH_MAPPING_PATH
+from config import DISH_MAPPING_PATH, CURRENT_MODEL
+from utils.models import BEDROCK
 from utils.wrapper import LLMWrapper
 
 class Plate(BaseModel):
@@ -21,6 +24,13 @@ dish_mapping = {key.lower(): value for key, value in dish_mapping.items()}
 
 wrapper = LLMWrapper()
 wrapper.set_structured_output(Output)
+
+
+def setup_messages(status):
+    if CURRENT_MODEL in BEDROCK:
+        content = status['messages'][0].content
+        status['messages'] = [HumanMessage(content=content)]
+
 
 def map_results(output: Output):
     ids = []
@@ -48,7 +58,8 @@ def map_results(output: Output):
 
 
 chain = (
-        prompt_responder
+        RunnablePassthrough(setup_messages)
+        | prompt_responder
         | wrapper.llm
         | map_results
 )
