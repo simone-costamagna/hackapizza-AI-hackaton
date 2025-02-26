@@ -3,6 +3,7 @@ import logging
 from langchain_core.runnables import RunnablePassthrough
 
 from app.agent import Agent
+from app.researcher.examples import examples
 from app.researcher.prompts import prompt_researcher
 from utils.wrapper import LLMWrapper
 from app.researcher.tools.tools import retrieve_functional_context, retrieve_technical_context
@@ -11,13 +12,17 @@ wrapper = LLMWrapper()
 wrapper.bind_tools([retrieve_functional_context, retrieve_technical_context])
 
 
+def add_examples(status):
+    return examples
+
 def log_output(input):
     if input.content != "":
-        logging.info(f"Researcher answer: {input.content}")
+        logging.info(f"Thoughts: {input.content}")
 
 
 chain = (
-    prompt_researcher
+    RunnablePassthrough.assign(examples=add_examples)
+    | prompt_researcher
     | wrapper.llm
     | RunnablePassthrough(log_output)
 )
