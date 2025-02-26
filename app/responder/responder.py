@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 from app.agent import Agent
 from app.responder.prompt import prompt_responder
 from config import DISH_MAPPING_PATH, CURRENT_MODEL
-from utils.models import BEDROCK
+from utils.models import BEDROCK, MODELS
 from utils.wrapper import LLMWrapper
 
 class Plate(BaseModel):
@@ -27,7 +27,7 @@ wrapper.set_structured_output(Output)
 
 
 def setup_messages(status):
-    if CURRENT_MODEL in BEDROCK:
+    if CURRENT_MODEL in MODELS[BEDROCK]:
         content = status['messages'][0].content
         status['messages'] = [HumanMessage(content=content)]
 

@@ -1,4 +1,3 @@
-import logging
 from langgraph.constants import END
 from langgraph.graph import StateGraph
 from app.agent import State

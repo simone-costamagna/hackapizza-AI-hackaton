@@ -30,7 +30,7 @@ def retrieve_functional_context(question: str, k: int) -> str:
     Tool che esegue un processo di Retrieval-Augmented Generation (RAG) per recuperare informazioni non strutturate
     da una base di conoscenza composta dai seguenti documenti:
 
-    - Manuale di Cucina: Include informazioni su licenze richieste, ordini, descrizioni di tecniche di preparazione,
+    - Manuale di Cucina di Sirius Cosmo: Include informazioni su licenze richieste, Ordini della Galassia, elenco e descrizioni di Tecniche di preparazione,
       cottura e tecniche avanzate.
     - Blog: Contiene recensioni da parte dei clienti.
     - Codice Galattico: Fornisce dettagli su definizione degli ordini, sostanze regolamentate, limiti quantitativi,
