@@ -4,7 +4,6 @@ from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_ibm import ChatWatsonx
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames
-
 from config import CURRENT_MODEL
 from utils.models import MODELS, WATSONX, GPT_40, GPT_40_MINI, BEDROCK, CLAUDE_3_5_SONNET, MISTRAL
 
@@ -34,7 +33,7 @@ def initialize_llm(model_id: str, temperature:float=0.1, max_tokens:int=None, ma
     else:
         llm = ChatOpenAI(
             model=model_id,
-            temperature=temperature,
+            # temperature=temperature,
             max_tokens=max_tokens,
             max_retries=max_retries
         )

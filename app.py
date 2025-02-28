@@ -35,10 +35,11 @@ with open(DOMANDE_PATH, mode='r', encoding='utf-8') as csv_file:
     csv_questions = list(csv.reader(csv_file))
 
     responses = [["row_id", "result"]]
-    start = 60
+    start = 85
     for index, question in enumerate(csv_questions[start:]):
         try:
             logging.info(f"Started answering num {index + start}: {question[0]}")
+
             response = chain.invoke({"messages": ("user", question[0])})
             if len(response['output']) > 0:
                 result = ",".join(str(val) for val in response['output'])
