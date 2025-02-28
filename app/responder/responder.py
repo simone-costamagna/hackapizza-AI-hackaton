@@ -64,5 +64,5 @@ chain = (
         | map_results
 )
 
-responder = Agent("responder", chain, history=False)
+responder = Agent("responder", chain)
 
