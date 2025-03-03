@@ -1,13 +1,13 @@
 import logging
 from typing import List
-from langchain_core.messages import AIMessage
 from langchain_core.runnables import Runnable
 from typing_extensions import TypedDict
 
 class State(TypedDict):
     main_question: str
     questions: List[str] = []
-
+    responses: List[str] = []
+    final_response: List[int] = []
 
 class Agent:
     def __init__(self, name: str, runnable: Runnable):

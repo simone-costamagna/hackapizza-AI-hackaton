@@ -7,8 +7,8 @@ from typing_extensions import TypedDict
 
 class State(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]
-    questions: list[str]
     schema: str
+    output: list[int]
 
 
 class Agent:

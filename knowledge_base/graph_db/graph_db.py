@@ -209,7 +209,7 @@ def generate_relationship_queries(data):
                     queries.append(
                         f"MATCH (p1:Pianeta {{Nome: '{escape_single_quotes(source_planet).lower()}'}}), "
                         f"(p2:Pianeta {{Nome: '{escape_single_quotes(target_planet).lower()}'}}) "
-                        f"MERGE (p1)-[:DISTANZA {{valore: {distance}}}]->(p2)"
+                        f"MERGE (p1)-[:DISTANZA {{anni luce: {distance}}}]->(p2)"
                     )
 
     return queries

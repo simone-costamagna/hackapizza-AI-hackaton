@@ -168,7 +168,7 @@ prompt_researcher = ChatPromptTemplate.from_messages(
             Strategia di risposta:
             1. Analizza bene la domanda individuando tutte le condizioni richieste.
             2. Ottieni informazioni sulle certificazioni e le tecniche di preparazione.
-                Accedi al vector store per verificare la loro esistenza, recuperare le regolamentazioni ed estrarre il nome completo dalle sigle
+                Accedi al vector store per verificare la loro esistenza, recuperare le descrizioni, le regolamentazioni ed estrarre il nome completo dalle sigle
             3. Identificazione delle entità nella domanda
                 Genera una query cypher per identificare e classificare le entità come: tecniche di preparazione, certificazioni, ingredienti, ristoranti, pianeti, chef
                 Correggi eventuali errori nei nomi applicando la distanza di Levenshtein (max. 3) e la funzione LOWER().
@@ -177,20 +177,22 @@ prompt_researcher = ChatPromptTemplate.from_messages(
                 Crea una o più query ottimizzate per il grafo per trovare i piatti che soddisfano le condizioni della 
                 domanda
                 Applica nuovamente la distanza di Levenshtein (max. 3) per migliorare i risultati.
-            5. Sulla base di tutte le informazioni estratte, ragiona ed estrai la lista di massimo 20 piatti formattati 
+            5. Sulla base di tutte le informazioni estratte, ragiona ed estrai la lista dipiatti formattati 
                 chiaramente che soddisfano la domanda.
             
             Usa i tool senza limiti per raccogliere tutte le informazioni necessarie.
                            
             Aassicurati di usare il corretto verso nelle relazioni e poni attenzione a tutte le condizioni della domanda.
-                                    
+            
+            Quando non ottieni l'informazione che cerchi dal VectorDB, prova ad aumentare k.
+            
             Quando ottieni una lista vuota di risultati dal grafo:
             - analizza la query che hai scritto per individuare eventuali errori
             - riprova a scrivere la query eseguendo tre tentativi prima di arrenderti.
             
             Quando ti arrendi, inventa e restituisci un singolo piatto.
-                        
-            L'output deve obbligatoriamente contenere il tuo ragionamento.
+            
+            Output atteso: l'elenco dei piatti senza altro testo.
             
             Schema del grafo:
             {schema}
@@ -216,8 +218,8 @@ if CURRENT_MODEL == CLAUDE_3_5_SONNET:
                 1. Cerca le Certificazioni e le TecnichePreparazione sul vector store per ottenere informazioni su di esse, validarne l'esistenza e recuperare il nome dalle sigle.
                 2. Genera query cypher per identificare le entità presenti nella domanda e classificale come tecniche di preparazione, certificazioni, ingredienti, ristoranti, pianeti, chef. Per farlo, utilizza il database a grafo per la verifica. Correggi eventuali errori nei nomi usando la distanza di Levenshtein e LOWER().
                 3. Genera una query ottimizzata per il grafo, cercando i piatti corrispondenti alle condizioni richieste. Utilizza ancora la distanza di Levenshtein.
-                4. Se ottieni più di 20 risultati, affina la query. Se nessuno, riformula e riprova. Se ancora nulla, genera un piatto inventato.
-                5. Restituisci una lista di massimo 20 piatti formattati chiaramente. Evita di dare consigli e restituisci solo i piatti conformi alla domanda su dati oggettivi.
+                4. Se non ottieni piatti, riformula e riprova. Se ancora nulla, genera un piatto inventato.
+                5. Restituisci una lista piatti formattati chiaramente. Evita di dare consigli e restituisci solo i piatti conformi alla domanda su dati oggettivi.
 
                 Nota: Per ogni query cypher, se non restituisce risultati, riprova con variazioni della query. Non arrenderti subito. Per esempio
                 se non trovi una Licenza, cerca tutte le licenze per vedere come sono scritte e trova quella che cerchi.
