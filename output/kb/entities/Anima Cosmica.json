@@ -1,0 +1,501 @@
+{
+    "Ristorante": {
+        "Nome": "Anima Cosmica",
+        "Pianeta": "Pandora",
+        "Chef": {
+            "Nome": "Aurora",
+            "Cognome": "Stellaris",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Antimateria",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 16,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gradi di influenza di livello tecnologico",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Nebulosa Celestiale alla Stellaris",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell'Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spezie Melange",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore con Flusso di Particelle Isoarmoniche"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sinfonia Cosmica ma Fatta Male",
+                "Ingredienti": [
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell'Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Pulsar",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Cottura a Forno Dinamico Inversionale"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Astro-Risotto alle Onde Temporali",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Pulsar",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Nebulosa",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Sale Temporale",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Saltare in Padella Classica"
+                    },
+                    {
+                        "Nome": "Marinatura tramite Reazioni d'Antimateria Diluite"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sinfonia Galattica alla Griglia Cangiante",
+                "Ingredienti": [
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spore Quantiche",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Congelamento Bio-Luminiscente Sincronico"
+                    },
+                    {
+                        "Nome": "Sinergia Elettro-Osmotica Programmabile"
+                    },
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Marinatura a Infusione Gravitazionale"
+                    },
+                    {
+                        "Nome": "Grigliatura Eletro-Molecolare a Spaziatura Variabile"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassie Infiammate: Sinfonia Cosmica in Sei Dimensioni",
+                "Ingredienti": [
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    },
+                    {
+                        "Nome": "Cottura Idrodinamica Autoregolante"
+                    },
+                    {
+                        "Nome": "Marinatura tramite Reazioni d'Antimateria Diluite"
+                    },
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassie Sospese: Un Viaggio di Sapori Cosmogalattici",
+                "Ingredienti": [
+                    {
+                        "Nome": "Cristalli di Memoria",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Gravità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Marinatura Temporale Sincronizzata"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Pioggia di Andromeda",
+                "Ingredienti": [
+                    {
+                        "Nome": "Cristalli di Memoria",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Speziaria",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    },
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Cottura Idrodinamica Autoregolante"
+                    },
+                    {
+                        "Nome": "Sinergia Elettro-Osmotica Programmabile"
+                    },
+                    {
+                        "Nome": "Marinatura Temporale Sincronizzata"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sinfonia Cosmica ma Fatta Bene",
+                "Ingredienti": [
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura Temporale Risonante"
+                    },
+                    {
+                        "Nome": "Congelamento Bio-Luminiscente Sincronico"
+                    },
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Odissea Cosmica di Nettuno",
+                "Ingredienti": [
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Vuoto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Frugale Energeticamente Negativa"
+                    },
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia Commovente di Stellari",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi Orbitali",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Grigliatura Eletro-Molecolare a Spaziatura Variabile"
+                    },
+                    {
+                        "Nome": "Marinatura a Infusione Gravitazionale"
+                    },
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    }
+                ]
+            }
+        ],
+        "AnnoApertura": null
+    }
+}

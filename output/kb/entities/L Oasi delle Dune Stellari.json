@@ -1,0 +1,458 @@
+{
+    "Ristorante": {
+        "Nome": "L'Oasi delle Dune Stellari",
+        "Pianeta": "Tatooine",
+        "Chef": {
+            "Nome": "Alessandra",
+            "Cognome": "Celestini",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 4,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gradi di influenza di livello tecnologico",
+                    "Livello": 4,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 9,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Antimateria",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Magnetica",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "La Creazione di Nova",
+                "Ingredienti": [
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Gravità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Vuoto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    },
+                    {
+                        "Nome": "Fermentazione Psionica Energetica"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Eterea Sinfonia di Gravità",
+                "Ingredienti": [
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Gravità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Congelazione Iperdimensionalmente Stratificata"
+                    },
+                    {
+                        "Nome": "Sinergia Elettro-Osmotica Programmabile"
+                    },
+                    {
+                        "Nome": "Cottura al Forno con Paradosso Temporale Cronospeculare"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Universo in Fusilli - Variazione Celestiale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Modellatura Onirica Tetrazionale"
+                    },
+                    {
+                        "Nome": "Decostruzione Ancestrale"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Cosmic Serenade",
+                "Ingredienti": [
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nettare di Sirena",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Sferificazione a Gravità Psionica Variabile"
+                    },
+                    {
+                        "Nome": "Ebollizione Magneto-Cinetica Pulsante"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Ecosistema Celeste",
+                "Ingredienti": [
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Liane di Plasmodio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Decostruzione Ancestrale"
+                    },
+                    {
+                        "Nome": "Surgelamento Antimaterico a Risonanza Inversa"
+                    },
+                    {
+                        "Nome": "Sinergia Elettro-Osmotica Programmabile"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Universo in Un Boccone",
+                "Ingredienti": [
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Bioma Sintetico"
+                    },
+                    {
+                        "Nome": "Sferificazione con Campi Magnetici Entropici"
+                    },
+                    {
+                        "Nome": "Idro-Cristallizzazione Sonora Quantistica"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Nebulosa Celestiale di Sogni Quantici",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Crononite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Liane di Plasmodio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Salsa Szechuan",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura Temporale Risonante"
+                    },
+                    {
+                        "Nome": "Affumicatura tramite Big Bang Microcosmico"
+                    },
+                    {
+                        "Nome": "Surgelamento Antimaterico a Risonanza Inversa"
+                    },
+                    {
+                        "Nome": "Sferificazione Cromatica Interdimensionale"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Universo Cosmico nel Piatto",
+                "Ingredienti": [
+                    {
+                        "Nome": "Vero Ghiaccio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Ebollizione Magneto-Cinetica Pulsante"
+                    },
+                    {
+                        "Nome": "Bollitura Entropica Sincronizzata"
+                    },
+                    {
+                        "Nome": "Sferificazione tramite Matrici Biofotiche"
+                    },
+                    {
+                        "Nome": "Incisione Elettromagnetica Plasmica"
+                    },
+                    {
+                        "Nome": "Idro-Cristallizzazione Sonora Quantistica"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia Speculare",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Pulsar",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Liane di Plasmodio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Sferificazione tramite Matrici Biofotiche"
+                    },
+                    {
+                        "Nome": "Ebollizione Magneto-Cinetica Pulsante"
+                    },
+                    {
+                        "Nome": "Affumicatura Polarizzata a Freddo Iperbarico"
+                    },
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    }
+                ]
+            }
+        ],
+        "AnnoApertura": null
+    }
+}

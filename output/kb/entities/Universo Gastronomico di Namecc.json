@@ -1,0 +1,434 @@
+{
+    "Ristorante": {
+        "Nome": "Universo Gastronomico di Namecc",
+        "Pianeta": "Namecc",
+        "Chef": {
+            "Nome": "Alice",
+            "Cognome": "Quantum-Rossi",
+            "Certificazioni": [
+                {
+                    "Tipo": "Gradi di influenza di livello tecnologico",
+                    "Livello": 6,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 15,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Magnetica",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Risotto dei Multiversi",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Nebulite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Sale Temporale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Padella Classica"
+                    },
+                    {
+                        "Nome": "Fermentazione Psionica Energetica"
+                    },
+                    {
+                        "Nome": "Decostruzione Interdimensionale Lovecraftiana"
+                    },
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    },
+                    {
+                        "Nome": "Affumicatura Psionica Sensoriale"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Panetto di Carne",
+                "Ingredienti": [
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi Orbitali",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Nebulite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura Temporale Risonante"
+                    },
+                    {
+                        "Nome": "Sferificazione Filamentare a Molecole Vibrazionali"
+                    },
+                    {
+                        "Nome": "Affumicatura Polarizzata a Freddo Iperbarico"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Cosmos Risotto Reale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi Orbitali",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Vuoto",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Ghiaccio di Criofenice",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Saltare in Padella Realtà Energetiche Parallele"
+                    },
+                    {
+                        "Nome": "Ebollizione Magneto-Cinetica Pulsante"
+                    },
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "La Balena incontra la Mandragora",
+                "Ingredienti": [
+                    {
+                        "Nome": "Vero Ghiaccio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    },
+                    {
+                        "Nome": "Marinatura Temporale Sincronizzata"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Armonia Cosmica della Fenice",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di mucca",
+                        "Provenienza": "Terra"
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    },
+                    {
+                        "Nome": "Decostruzione Magnetica Risonante"
+                    },
+                    {
+                        "Nome": "Decostruzione Interdimensionale Lovecraftiana"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Bioma Sintetico"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Fenice Galattica",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Nebulite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Marinatura Temporale Sincronizzata"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    },
+                    {
+                        "Nome": "Congelazione Iperdimensionalmente Stratificata"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Rapsodia Quantistica nel Cosmo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Nebulite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    },
+                    {
+                        "Nome": "Pulsazioni Quantistiche"
+                    },
+                    {
+                        "Nome": "Marinatura Sotto Zero a Polarità Inversa"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia di Sapore Quantum",
+                "Ingredienti": [
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Risotto dei Multiversi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Crononite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Idro-Cristallizzazione Sonora Quantistica"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Tris di Carne con Pane",
+                "Ingredienti": [
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Memoria",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Sale Temporale",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Impasto a Campi Magnetici Dualistici"
+                    },
+                    {
+                        "Nome": "Decostruzione Magnetica Risonante"
+                    },
+                    {
+                        "Nome": "Ebollizione Magneto-Cinetica Pulsante"
+                    },
+                    {
+                        "Nome": "Sferificazione Filamentare a Molecole Vibrazionali"
+                    },
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    }
+                ]
+            }
+        ],
+        "AnnoApertura": null
+    }
+}

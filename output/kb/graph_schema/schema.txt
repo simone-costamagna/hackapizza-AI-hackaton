@@ -1,0 +1,19 @@
+Node properties:
+Ristorante {AnnoApertura: STRING, Nome: STRING}
+Pianeta {Nome: STRING}
+Chef {Nome: STRING, Cognome: STRING}
+Certificazione {Nome: STRING}
+Piatto {Nome: STRING}
+Ingrediente {Nome: STRING, Provenienza: STRING}
+TecnicaPreparazione {Nome: STRING}
+Relationship properties:
+HA_CERTIFICAZIONE {Livello: STRING, AnnoConseguimento: STRING}
+DISTANZA {anni luce: INTEGER}
+The relationships:
+(:Ristorante)-[:SERVE]->(:Piatto)
+(:Ristorante)-[:SI_TROVA_SU]->(:Pianeta)
+(:Ristorante)-[:HA_CHEF]->(:Chef)
+(:Pianeta)-[:DISTANZA]->(:Pianeta)
+(:Chef)-[:HA_CERTIFICAZIONE]->(:Certificazione)
+(:Piatto)-[:PREPARATO_CON]->(:TecnicaPreparazione)
+(:Piatto)-[:CONTIENE]->(:Ingrediente)

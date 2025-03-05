@@ -1,0 +1,471 @@
+{
+    "Ristorante": {
+        "Nome": "Stelle dell'Infinito Celestiale",
+        "Pianeta": "Namecc",
+        "Chef": {
+            "Nome": "Jessica",
+            "Cognome": "Cosmica",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Magnetica",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Antimateria",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 9,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gradi di influenza di livello tecnologico",
+                    "Livello": 6,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "La Mucca Che Stordisce l'Universo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Stelle",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    },
+                    {
+                        "Nome": "Decostruzione Interdimensionale Lovecraftiana"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Piccola Odissea Cosmica",
+                "Ingredienti": [
+                    {
+                        "Nome": "Polvere di Pulsar",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Vuoto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affettamento a Pulsazioni Quantistiche"
+                    },
+                    {
+                        "Nome": "Bollitura Entropica Sincronizzata"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "L'Unicorno piange il Kraken",
+                "Ingredienti": [
+                    {
+                        "Nome": "Foglie di Nebulosa",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spezie Melange",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    },
+                    {
+                        "Nome": "Saltare in Padella Singolarità Inversa"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    },
+                    {
+                        "Nome": "Affettamento a Pulsazioni Quantistiche"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "L'Eternità al Crepuscolo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Vero Ghiaccio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Nebulosa",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Pulsar Magnetica"
+                    },
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Marinatura tramite Reazioni d'Antimateria Diluite"
+                    },
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    },
+                    {
+                        "Nome": "Ebollizione Magneto-Cinetica Pulsante"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "La Balena Sputafuoco",
+                "Ingredienti": [
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Sottovuoto Antimateria"
+                    },
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    },
+                    {
+                        "Nome": "Decostruzione Interdimensionale Lovecraftiana"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Multirealità Collassante"
+                    },
+                    {
+                        "Nome": "Sferificazione con Campi Magnetici Entropici"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sassi e Sassolini",
+                "Ingredienti": [
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spezie Melange",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Idrodinamica Autoregolante"
+                    },
+                    {
+                        "Nome": "Sferificazione con Campi Magnetici Entropici"
+                    },
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    },
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Grigliatura Plasma Sintetico Risonante"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia Ardente",
+                "Ingredienti": [
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spezie Melange",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Congelamento Bio-Luminiscente Sincronico"
+                    },
+                    {
+                        "Nome": "Decostruzione Magnetica Risonante"
+                    },
+                    {
+                        "Nome": "Affettamento a Pulsazioni Quantistiche"
+                    },
+                    {
+                        "Nome": "Grigliatura Plasma Sintetico Risonante"
+                    },
+                    {
+                        "Nome": "Decostruzione Interdimensionale Lovecraftiana"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia di Cosmo-Delizie",
+                "Ingredienti": [
+                    {
+                        "Nome": "Vero Ghiaccio",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Speziaria",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Decostruzione Magnetica Risonante"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Pulsar Magnetica"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Nebulosa di Confini Sfondati",
+                "Ingredienti": [
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Singolarità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Plasma Vitale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Petali di Eco",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura Olografica Quantum Fluttuante"
+                    },
+                    {
+                        "Nome": "Congelamento Bio-Luminiscente Sincronico"
+                    },
+                    {
+                        "Nome": "Saltare in Padella Singolarità Inversa"
+                    },
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Surgelamento Antimaterico a Risonanza Inversa"
+                    }
+                ]
+            }
+        ],
+        "AnnoApertura": null
+    }
+}

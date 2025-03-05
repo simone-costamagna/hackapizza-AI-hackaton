@@ -1,0 +1,466 @@
+{
+    "Ristorante": {
+        "Nome": "Ristorante Quantico",
+        "Pianeta": "Pandora",
+        "Chef": {
+            "Nome": "Alessandra",
+            "Cognome": "Temporini",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 4,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Temporale",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 11,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Antimateria",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Magnetica",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Luce",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gradi di influenza di livello tecnologico",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Echi del Mare Eterno",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Salsa Szechuan interdimensionale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Memoria",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    },
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Odissea Temporale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Unicorno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Vero Ghiaccio",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Reazioni d'Antimateria Diluite"
+                    },
+                    {
+                        "Nome": "Cottura a vapore con Flusso di Particelle Isoarmoniche"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Rintocchi del Cosmo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Radici di Gravità",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Vuoto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    },
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Armonia Cosmica alla Tavola d'Oro",
+                "Ingredienti": [
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Crononite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Sale Temporale",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Campi Magnetici Entropici"
+                    },
+                    {
+                        "Nome": "Grigliatura Elettro-Molecolare a Spaziatura Variabile"
+                    },
+                    {
+                        "Nome": "Trattamento Luminante"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Echi del Cosmo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Memoria",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Marinatura Temporale Sincronizzata"
+                    },
+                    {
+                        "Nome": "Incisione Elettromagnetica Plasmica"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Ethereal Temporal Elixir",
+                "Ingredienti": [
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Baccacedro",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonie di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Crononite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Bollitura Termografica a Rotazione Veloce"
+                    },
+                    {
+                        "Nome": "Sinergia Elettro-Osmotica Programmabile"
+                    },
+                    {
+                        "Nome": "Impasto a Campi Magnetici Dualistici"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sinfonia Celestiale di Gnocchi del Crepuscolo",
+                "Ingredienti": [
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Speziaria",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Farina di Nettuno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Impasto a Campi Magnetici Dualistici"
+                    },
+                    {
+                        "Nome": "Affumicatura Temporale Risonante"
+                    },
+                    {
+                        "Nome": "Ebollizione Magneto-Cinetica Pulsante"
+                    },
+                    {
+                        "Nome": "Amalgamazione Sintetica Molecolare"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Eclissi Armonica di Sapori",
+                "Ingredienti": [
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Salsa Szechuan interdimensionale",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a vapore ecodinamico bilanciato"
+                    },
+                    {
+                        "Nome": "Sferificazione filamentare a molecole vibrazionali"
+                    },
+                    {
+                        "Nome": "Reazioni d’antimateria diluite"
+                    },
+                    {
+                        "Nome": "Taglio a risonanza sonica rigenerativa"
+                    },
+                    {
+                        "Nome": "Marinatura psionica"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Il Viaggio dell'Etereo Risveglio",
+                "Ingredienti": [
+                    {
+                        "Nome": "Gnocchi del Crepuscolo",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Cristalli di Nebulite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Alghe Bioluminescenti",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Plasma Vitale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Decostruzione magnetica risonante"
+                    },
+                    {
+                        "Nome": "Amalgamazione sintetica molecolare"
+                    },
+                    {
+                        "Nome": "Sferificazione filamentare a molecole vibrazionali"
+                    },
+                    {
+                        "Nome": "Cottura a vapore termocinetica multipla"
+                    },
+                    {
+                        "Nome": "Forno dinamico inversionale"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sinfonia Cosmica di Mare e Stelle",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Salsa Szechuan",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Lacrime di Andromeda",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Marinatura Sotto Zero a Polarità Inversa"
+                    },
+                    {
+                        "Nome": "Cryo-Tessitura Energetica Polarizzata"
+                    }
+                ]
+            }
+        ],
+        "AnnoApertura": null
+    }
+}

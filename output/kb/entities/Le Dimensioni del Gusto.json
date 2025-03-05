@@ -1,0 +1,431 @@
+{
+    "Ristorante": {
+        "Nome": "Le Dimensioni del Gusto",
+        "Pianeta": "Ego",
+        "Chef": {
+            "Nome": "Aurora",
+            "Cognome": "Celestini",
+            "Certificazioni": [
+                {
+                    "Tipo": "Psionica",
+                    "Livello": 3,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Quantistica",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gravitazionale",
+                    "Livello": 1,
+                    "AnnoConseguimento": null
+                },
+                {
+                    "Tipo": "Gradi di influenza di livello tecnologico",
+                    "Livello": 2,
+                    "AnnoConseguimento": null
+                }
+            ]
+        },
+        "Menu": [
+            {
+                "NomePiatto": "Sinfonia Cosmica: la Vendetta Fantasma",
+                "Ingredienti": [
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Vuoto",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Colonia di Mycoflora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Quantico Biometrica"
+                    },
+                    {
+                        "Nome": "Marinatura Psionica"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Cottura Sottovuoto Frugale Energeticamente Negativa"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Antipasto Celestiale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Kraken",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Marinatura Psionica"
+                    },
+                    {
+                        "Nome": "Fermentazione Quantico Biometrica"
+                    },
+                    {
+                        "Nome": "Amalgamazione Sintetica Molecolare"
+                    },
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sinfonia Cosmica: il Ritorno dell'Imperatore",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spore Quantiche",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Polvere di Crononite",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Grigliatura Elettro-Molecolare a Spaziatura Variabile"
+                    },
+                    {
+                        "Nome": "Amalgamazione Sintetica Molecolare"
+                    },
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Evanescenza Cosmica",
+                "Ingredienti": [
+                    {
+                        "Nome": "Fusilli del Vento",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Shard di Materia Oscura",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Foglie di Mandragora",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Plasma Vitale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Essenza di Tachioni",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    },
+                    {
+                        "Nome": "Amalgamazione Sintetica Molecolare"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia nel Piatto: Sinfonia Universale di Aromi e Sapori",
+                "Ingredienti": [
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Drago",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Xenodonte",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Salsa Szechuan",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Biscotti della Galassia",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Vero Ghiaccio",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Bollitura Infrasonica Armonizzata"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Sinfonia Galattica di Sapori con Sorpresa di Drago Fiammante",
+                "Ingredienti": [
+                    {
+                        "Nome": "Lattuga Namecciana",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Teste di Idra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi Orbitali",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Marinatura Psionica"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    },
+                    {
+                        "Nome": "Microonde Entropiche Sincronizzate"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia di Sapori di Aurora",
+                "Ingredienti": [
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Fibra di Sintetex",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Uova di Fenice",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Funghi dell’Etere",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Amido di Stellarion",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Nduja Fritta Tanto",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Grigliatura Elettro-Molecolare a Spaziatura Variabile"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    },
+                    {
+                        "Nome": "Affumicatura a Stratificazione Quantica"
+                    },
+                    {
+                        "Nome": "Fermentazione Quantico Biometrica"
+                    },
+                    {
+                        "Nome": "Impasto Gravitazionale Vorticoso"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia di Sapore Interdimensionale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Cristalli di Memoria",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Mucca",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Carne di Balena Spaziale",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Riso di Cassandra",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Erba Pipa",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane di Luce",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore con Flusso di Particelle Isoarmoniche"
+                    },
+                    {
+                        "Nome": "Marinatura Psionica"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Taglio a Risonanza Sonica Rigenerativa"
+                    }
+                ]
+            },
+            {
+                "NomePiatto": "Galassia di Sapori: Sinfonia Transdimensionale",
+                "Ingredienti": [
+                    {
+                        "Nome": "Granuli di Nebbia Arcobaleno",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Pane degli Abissi",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Spaghi del Sole",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Muffa Lunare",
+                        "Provenienza": null
+                    },
+                    {
+                        "Nome": "Frammenti di Supernova",
+                        "Provenienza": null
+                    }
+                ],
+                "TecnichePreparazione": [
+                    {
+                        "Nome": "Cottura a Vapore Termocinetica Multipla"
+                    },
+                    {
+                        "Nome": "Cottura con Microonde Entropiche Sincronizzate"
+                    },
+                    {
+                        "Nome": "Fermentazione Quantico Biometrica"
+                    },
+                    {
+                        "Nome": "Cottura a Vapore Ecodinamico Bilanciato"
+                    }
+                ]
+            }
+        ],
+        "AnnoApertura": null
+    }
+}
