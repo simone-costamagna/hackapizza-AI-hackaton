@@ -1,6 +1,6 @@
 import os.path
 
-from utils.models import CLAUDE_3_5_SONNET, GPT_40
+from utils.models import CLAUDE_3_5_SONNET, GPT_40, GPT_03_MINI, GPT_01_MINI, GPT_40_MINI
 
 CURRENT_MODEL = GPT_40
 

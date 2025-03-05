@@ -1,5 +1,4 @@
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.prompts import ChatPromptTemplate
 
 PROMPT_EXTRACT_ENTITY = ChatPromptTemplate([
     ("system", """Sei un assistente specializzato nell'estrazione di informazioni strutturate da documenti pdf, 

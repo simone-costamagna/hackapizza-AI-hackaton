@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 from app.agent import Agent
 from app.responder.prompt import prompt_responder
 from config import DISH_MAPPING_PATH, CURRENT_MODEL
-from utils.models import BEDROCK, MODELS
+from utils.models import BEDROCK, MODELS, GPT_03_MINI
 from utils.wrapper import LLMWrapper
 
 class Plate(BaseModel):
@@ -17,12 +17,11 @@ class Plate(BaseModel):
 class Output(BaseModel):
     plates: list[Plate] = Field(description="Lista di piatti")
 
-
 with open(DISH_MAPPING_PATH, 'r', encoding='utf-8') as json_file:
     dish_mapping = json.load(json_file)
 dish_mapping = {key.lower(): value for key, value in dish_mapping.items()}
 
-wrapper = LLMWrapper()
+wrapper = LLMWrapper(model_id=GPT_03_MINI)
 wrapper.set_structured_output(Output)
 
 
@@ -31,11 +30,20 @@ def setup_messages(status):
         content = status['messages'][0].content
         status['messages'] = [HumanMessage(content=content)]
 
+    questions = ""
+    responses = ""
+    for index, question in enumerate(status['questions']):
+        questions += f"{index+1}) {question}\n"
+        responses += f"{index+1}) {status['responses'][index]}\n"
+
+    status['questions'] = questions
+    status['responses'] = responses
+
 
 def map_results(output: Output):
     ids = []
 
-    logging.debug(f"Responder Map results: {output}")
+    logging.debug(f"Agent 'responder' output: {output.plates}")
 
     for plate in output.plates:
         try:
@@ -50,7 +58,7 @@ def map_results(output: Output):
                     min_distance = dist
                     best_match = key
 
-            logging.info(f"Key {plate.name.lower()} not found. Found {best_match} with similarity")
+            logging.info(f"Agent 'responder' - Key {plate.name.lower()} not found. Found {best_match} with similarity")
             ids.append(dish_mapping[best_match])
 
     return list(dict.fromkeys(ids)) # remove duplicates
@@ -59,10 +67,8 @@ def map_results(output: Output):
 
 chain = (
         RunnablePassthrough(setup_messages)
-        | prompt_responder
-        | wrapper.llm
-        | map_results
+        | RunnablePassthrough.assign(final_response=prompt_responder | wrapper.llm | map_results)
 )
 
-responder = Agent("responder", chain, history=False)
+responder = Agent("responder", chain)
 

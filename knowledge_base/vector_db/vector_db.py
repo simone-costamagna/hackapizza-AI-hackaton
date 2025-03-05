@@ -14,6 +14,11 @@ def setup(status):
 
 
 def load_documents(status):
+    """
+    Loads documents into the vector database.
+    Iterates through the list of vector database files and loads each
+    one using the appropriate loader function.
+    """
     logging.info(f"Loading vector db documents started")
 
     for file in tqdm(status['files'][VECTOR_DB], desc="Loading documents"):

@@ -27,21 +27,20 @@ def setup(status):
     return status
 
 chain = (
-    RunnablePassthrough(setup)
-    | graph
+    graph
 )
 
 with open(DOMANDE_PATH, mode='r', encoding='utf-8') as csv_file:
     csv_questions = list(csv.reader(csv_file))
 
     responses = [["row_id", "result"]]
-    start = 60
+    start = 11
     for index, question in enumerate(csv_questions[start:]):
         try:
             logging.info(f"Started answering num {index + start}: {question[0]}")
-            response = chain.invoke({"messages": ("user", question[0])})
-            if len(response['output']) > 0:
-                result = ",".join(str(val) for val in response['output'])
+            response = chain.invoke({"main_question": question[0]})
+            if len(response['final_response']) > 0:
+                result = ",".join(str(val) for val in response['final_response'])
                 responses.append([index + 1, result])
             else:
                 responses.append([index + 1, "50"])
@@ -49,7 +48,7 @@ with open(DOMANDE_PATH, mode='r', encoding='utf-8') as csv_file:
             logging.error(f"Error for question {question} at index {index}: {e}")
             responses.append([index + 1, "50"])
 
-        logging.info(f"Final response: {responses[-1]}\n-----------------------------------------------------------------------------------------------------------------------\n")
+        logging.info(f"Final response: {responses[-1][1]}\n-----------------------------------------------------------------------------------------------------------------------\n")
 
     # Save output
     with open(OUTPUT_DOMANDE, mode='w', encoding='utf-8', newline='') as csv_file_output:
