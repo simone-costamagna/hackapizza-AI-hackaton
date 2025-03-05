@@ -11,7 +11,7 @@ builder = StateGraph(State)
 builder.add_node(researcher.name, researcher)
 builder.add_node('tools', create_tool_node_with_fallback(tools))
 
-builder.add_conditional_edges(researcher.name, tools_condition)  # Move to tools after input
+builder.add_conditional_edges(researcher.name, tools_condition)  # Move to tools
 builder.add_edge('tools', researcher.name)
 builder.add_edge(researcher.name, END)
 

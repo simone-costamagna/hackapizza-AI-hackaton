@@ -5,6 +5,7 @@ from langchain_core.runnables import Runnable
 from langgraph.graph.message import AnyMessage, add_messages
 from typing_extensions import TypedDict
 
+
 class State(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]
     schema: str

@@ -27,6 +27,13 @@ runnable_clean_json_template = (
 
 
 def get_json_templates(status):
+    """
+    Generates JSON templates for resource files.
+    For each file in the RESOURCES category, checks if a
+    corresponding JSON template already exists. If found, it reads the content;
+    otherwise, it generates a new template using 'runnable_get_json_templates'
+    and saves it to a file. The templates are collected and returned.
+    """
     logging.info("Getting json template for each file...")
 
     files = status['files']
@@ -54,13 +61,19 @@ def get_json_templates(status):
 
             templates.append(template)
 
-
     logging.info(f"Process files completed. Json templates obtained: {len(templates)}")
 
     return templates
 
 
 def process_templates(status):
+    """
+    Merges multiple JSON templates into an averaged template.
+    This function processes a set of JSON templates by merging them in batches of 5.
+    If a previously processed template exists, it is loaded from a file.
+    Otherwise, it iteratively combines smaller sets of templates until a single
+    averaged template remains, which is then saved and returned.
+    """
     logging.info(f"Process schema started, templates: {len(status['json_templates'])}")
 
     json_file_path = os.path.join(OUTPUT_JSON_TEMPLATE_FOLDER, 'row_template.json')
@@ -90,6 +103,12 @@ def process_templates(status):
 
 
 def clean_template(status):
+    """
+    Removes unnecessary or overly detailed information from a JSON template.
+    This function cleans the given JSON template by filtering out excessive details.
+    If a cleaned version already exists, it is loaded from a file; otherwise, the
+    function processes the template, saves the cleaned version, and returns it.
+    """
     logging.info(f"Cleaning schema started")
 
     cleaned_json_file_path = os.path.join(OUTPUT_JSON_TEMPLATE_FOLDER, 'cleaned_template.json')

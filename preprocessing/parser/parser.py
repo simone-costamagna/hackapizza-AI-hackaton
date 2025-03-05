@@ -64,6 +64,10 @@ def load_csv(file_path):
 
 
 def load_documents(state):
+    """
+    Loads and extracts text content from various document formats in a specified folder.
+    Supported formats: PDF, DOCX, HTML, TXT, and CSV.
+    """
     folder_path = state['data_folder_path']
 
     files_content = {}
@@ -96,6 +100,11 @@ def load_documents(state):
 
 
 def classify_documents(state):
+    """
+    Categorizes documents based on predefined patterns in the CLASSES dictionary.
+    Each document uploaded in the state is checked against class-specific patterns,
+    and if matched, it is assigned to the corresponding category.
+    """
     files = {class_name: [] for class_name in CLASSES}
 
     for file_path, content in state['files'].items():
@@ -106,7 +115,7 @@ def classify_documents(state):
                 if fnmatch.fnmatch(file_path, normalized_pattern):
                     files[class_name].append([file_path, content])
                     classified = True
-                    break  # Stop checking other patterns in the current class
+                    break
 
         if not classified:
             logging.warning(f"Not classified: {file_path}")
@@ -115,6 +124,11 @@ def classify_documents(state):
 
 
 def parse_documents(state):
+    """
+    Converts handbook documents into Markdown format.
+    Checks if a preprocessed Markdown file exists; if so, it reads the content.
+    Otherwise, it processes the document using 'runnable_parse_legal_codes'
+    """
     for file in tqdm(state['files'][HANDBOOKS], desc="Converting to md format"):
         file_name = os.path.basename(file[0])
         md_file_path = os.path.join(OUTPUT_PREPROCESSING_MD_FILES_FOLDER, os.path.splitext(file_name)[0] + '.md')

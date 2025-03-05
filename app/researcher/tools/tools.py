@@ -42,7 +42,7 @@ def retrieve_functional_context(question: str, k: int) -> str:
         str: I chunks di contesto recuperati, concatenati e formattati come stringa.
     """
     def search_functional_context(question, k):
-        logging.info(f'Tools Functional Context - Vector db tool has been invoked. Question: {question}; k: {k}')
+        logging.info(f'Tool "functional context" - VectorDb tool has been invoked - Question: {question}; k: {k}')
 
         chunks = search(question, k)
 
@@ -53,7 +53,7 @@ def retrieve_functional_context(question: str, k: int) -> str:
         context += "\n"
 
         logging.debug(f"Tools Functional Context - Vector Db tool output: {context}")
-        logging.info(f"Tools Functional Context - Vector Db tool finished. {len(chunks)} chunks retrieved.")
+        logging.info(f"Tools Functional Context - Vector Db tool finished - {len(chunks)} chunks retrieved.")
 
         return context
 
@@ -73,12 +73,7 @@ def retrieve_technical_context(query_cypher: str) -> str:
         str: Risultato della query formattato come stringa leggibile.
     """
     def search_technical_context(query):
-        logging.info(f'Tools Technical Context - Graph db tool has been invoked.')
-        logging.info(f"Tools Technical Context - Query: {query}")
-
-        pattern = r'(["\'])(.*?)(\1)'
-        # query_ = re.sub(pattern, to_lowercase, query)
-        # logging.info(f"Updated Query: {query_}")
+        logging.info(f'Tool "technical context" - GraphDb tool has been invoked - Query: {query}')
 
         results = []
         try:
@@ -97,7 +92,7 @@ def retrieve_technical_context(query_cypher: str) -> str:
         context += "\n"
 
         logging.debug(f"Tools Technical Context - Graph Db output: {results}")
-        logging.info(f"Tools Technical Context - Graph Db tool finished. {len(results)} results retrieved.")
+        logging.info(f"Tools Technical Context - Graph Db tool finished - {len(results)} results retrieved.")
 
         return context
 

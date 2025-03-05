@@ -17,7 +17,6 @@ class Plate(BaseModel):
 class Output(BaseModel):
     plates: list[Plate] = Field(description="Lista di piatti")
 
-
 with open(DISH_MAPPING_PATH, 'r', encoding='utf-8') as json_file:
     dish_mapping = json.load(json_file)
 dish_mapping = {key.lower(): value for key, value in dish_mapping.items()}
@@ -44,7 +43,7 @@ def setup_messages(status):
 def map_results(output: Output):
     ids = []
 
-    logging.info(f"Agent 'responder' output: {output.plates}")
+    logging.debug(f"Agent 'responder' output: {output.plates}")
 
     for plate in output.plates:
         try:
@@ -59,7 +58,7 @@ def map_results(output: Output):
                     min_distance = dist
                     best_match = key
 
-            logging.info(f"Key {plate.name.lower()} not found. Found {best_match} with similarity")
+            logging.info(f"Agent 'responder' - Key {plate.name.lower()} not found. Found {best_match} with similarity")
             ids.append(dish_mapping[best_match])
 
     return list(dict.fromkeys(ids)) # remove duplicates
@@ -68,7 +67,7 @@ def map_results(output: Output):
 
 chain = (
         RunnablePassthrough(setup_messages)
-        | RunnablePassthrough.assign(final_response=prompt_responder|wrapper.llm|map_results)
+        | RunnablePassthrough.assign(final_response=prompt_responder | wrapper.llm | map_results)
 )
 
 responder = Agent("responder", chain)

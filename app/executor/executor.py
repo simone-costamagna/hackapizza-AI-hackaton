@@ -7,7 +7,7 @@ from config import OUTPUT_KB_GRAPH_SCHEMA, OUTPUT_APP
 
 
 def log(status):
-    logging.info(f"Agent 'executor risposte: {status['responses']}")
+    logging.debug(f"Agent 'executor risposte: {status['responses']}")
 
 
 def setup():
@@ -21,10 +21,14 @@ def setup():
 
 
 def invoke_graph_researcher(status):
+    """
+    Invokes the graph researcher to process a list of questions.
+    """
     responses = []
 
     schema, output = setup()
     for question in status["questions"]:
+        logging.info(f"Agent 'executor' is asking '{question}' to researcher")
         response = graph_researcher.invoke({
             "messages": ("user", question),
             "schema": schema,

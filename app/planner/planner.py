@@ -7,15 +7,17 @@ from utils.models import GPT_03_MINI
 from utils.wrapper import LLMWrapper
 
 
+class Output(BaseModel):
+    questions: list[str] = Field(description="Lista di sotto-domande")
+
+
 def extract_questions(output):
     return output.questions
+
 
 def log(status):
     logging.info(f"Agent 'planner' - Sotto-domande: {status['questions']}")
 
-
-class Output(BaseModel):
-    questions: list[str] = Field(description="Lista di sotto-domande")
 
 wrapper = LLMWrapper(model_id=GPT_03_MINI)
 wrapper.set_structured_output(Output)

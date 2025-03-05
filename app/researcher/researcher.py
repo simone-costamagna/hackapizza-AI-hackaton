@@ -14,18 +14,13 @@ def add_examples(status):
     return examples
 
 
-def log_input(input):
-    logging.info(f"Agent 'researcher' - Question: {input['messages'][-1].content}")
-
-
 def log_output(input):
     if input.content != "":
-        logging.info(f"Agent 'researcher' - Thoughts: {input.content}")
+        logging.debug(f"Agent 'researcher' - Thoughts: {input.content}")
 
 
 chain = (
-    RunnablePassthrough(log_input)
-    | RunnablePassthrough.assign(examples=add_examples)
+    RunnablePassthrough.assign(examples=add_examples)
     | prompt_researcher
     | wrapper.llm
     | RunnablePassthrough(log_output)

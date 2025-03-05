@@ -76,6 +76,10 @@ def load_json(file_path):
 
 
 def load_file(file_name, file_path):
+    """
+    Loads and extracts text content from various document formats in a specified folder.
+    Supported formats: PDF, DOCX, HTML, TXT, and CSV.
+    """
     try:
         if 'domande' in file_path:  # Skip 'domande' files
             return None
@@ -104,6 +108,11 @@ def load_file(file_name, file_path):
 
 
 def load_documents(state):
+    """
+    Loads documents from predefined file paths and directories.
+    This script iterates over specified paths, categorizing files into GRAPH_DB, VECTOR_DB, and TEMPLATE.
+    It reads file contents and stores them in a structured format, handling both individual files and entire directories.
+    """
     files = {
         GRAPH_DB: [],
         VECTOR_DB: [],

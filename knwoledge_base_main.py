@@ -17,10 +17,11 @@ def setup(status):
     os.makedirs(OUTPUT_KB_ENTITIES_FOLDER, exist_ok=True)
     os.makedirs(OUTPUT_KB_GRAPH_SCHEMA, exist_ok=True)
 
+
 chain = (
     RunnablePassthrough(setup)
     | loader
-    # | graph_db
+    | graph_db
     | vector_db
 )
 

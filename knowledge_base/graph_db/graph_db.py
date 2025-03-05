@@ -46,6 +46,11 @@ def replace_none(data):
 
 
 def extract_entity(status):
+    """
+    Extracts entities from documents based on a predefined JSON template.
+    This function processes files categorized under GRAPH_DB, applying a template to extract structured entities.
+    If a pre-existing extraction exists, it loads it; otherwise, it generates new entities and saves them.
+    """
     logging.info(f"Extracting entities using json template")
 
     graph_db_entites = []
@@ -216,6 +221,11 @@ def generate_relationship_queries(data):
 
 
 def generate_queries(status):
+    """
+    Generates database queries deterministically based on extracted entities.
+    This function creates delete, node, and relationship queries from the extracted entities.
+    It ensures a structured and consistent approach to query generation for database operations.
+    """
     logging.info("Generating queries started")
 
     entities = status['entities']
@@ -239,6 +249,11 @@ def generate_queries(status):
 
 
 def execute_queries(status):
+    """
+    Executes generated queries in the Neo4j database.
+    This function runs delete, node, and relationship queries sequentially
+    using the Neo4j driver session to modify the database accordingly.
+    """
     logging.info("Executing queries started")
 
     queries = status['queries']
@@ -256,24 +271,12 @@ def execute_queries(status):
     logging.info("Executed queries")
 
 
-def create_embedding(status):
-    logging.info("Creating embeddings started")
-
-    existing_graph = Neo4jVector.from_existing_graph(
-        embedding=embeddingWrapper.embedding,
-        url=NEO4J_URI,
-        username=NEO4J_USER,
-        password=NEO4J_PASSWORD,
-        index_name="index",
-        node_label="Piatto",
-        text_node_properties=["EsperienzaVisiva", "EsperienzaSensoriale"],
-        embedding_node_property="embedding"
-    )
-
-    logging.info("Embedding created")
-
-
 def store_schema(status):
+    """
+    Stores the Neo4j database schema to a file.
+    This function retrieves the current schema from the Neo4j database
+    and saves it as a text file for future reference.
+    """
     graph = Neo4jGraph(url=NEO4J_URI, username=NEO4J_USER, password=NEO4J_PASSWORD)
     graph.refresh_schema()
     schema = graph.schema
@@ -289,6 +292,5 @@ graph_db = (
     RunnablePassthrough.assign(entities=extract_entity)
     | RunnablePassthrough.assign(queries=generate_queries)
     | RunnablePassthrough(execute_queries)
-    | RunnablePassthrough(create_embedding)
     | RunnablePassthrough(store_schema)
 )
