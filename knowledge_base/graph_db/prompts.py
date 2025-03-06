@@ -13,7 +13,8 @@ PROMPT_EXTRACT_ENTITY = ChatPromptTemplate([
     - Scarta qualsiasi informazione del documento non richiesta dal template.\n
     - Assicurati che il risultato sia un JSON valido e ben formattato.\n
     - Utilizza i significati dei dizionari al posto delle abbreviazioni.\n
-    - Poni particolare attenzione ad evitare di mancare delle entità. Alcune entità hanno nomi strani.\n\n
+    - Poni particolare attenzione ad evitare di mancare delle entità. Alcune entità hanno nomi strani.\n
+    - Quando leggi dei valori con l'aggiunta di un '+' finale, aggiungi 1 al valore. Esempio: 'VI+', diventa 7\n\n
     
     Template: {template}
     

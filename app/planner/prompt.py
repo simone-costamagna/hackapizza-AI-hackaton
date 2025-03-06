@@ -53,7 +53,7 @@ prompt_planner = ChatPromptTemplate.from_messages(
             [Input]
             "Che piatti posso mangiare che contengano Teste di Idra ma che abbia nella sua preparazione la Marinatura a Infusione Gravitazionale correttamente operata da un chef che ha le corrette licenze e certificazioni descritte dal Codice di Galattico?"
             [Output]
-            ["Che piatti posso mangiare che contengano Teste di Idra?", "Quali piatti posso mangiare che abbiano nella preparazione la Marinatura a Infusione correttamente operata da un chef che ha le corrette licenze e certificazioni descritte dal Codice di Galattico?"]]
+            ["Che piatti posso mangiare che contengano Teste di Idra?", "Qauli piatti utilizzano la Marinatura a Infusione Gravitazionale?", "Quali piatti posso mangiare che abbiano nella preparazione la Marinatura a Infusione correttamente operata da un chef che ha le corrette licenze e certificazioni descritte dal Codice di Galattico?"]]
             '''
         ),
         ("human", "{main_question}"),

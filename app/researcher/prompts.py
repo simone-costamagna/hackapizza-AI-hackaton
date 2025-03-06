@@ -20,21 +20,23 @@ prompt_researcher = ChatPromptTemplate.from_messages(
             4. Ricerca dei piatti corrispondenti
                 Crea una o più query ottimizzate per il grafo per trovare i piatti che soddisfano le condizioni della 
                 domanda
-                Applica nuovamente la distanza di Levenshtein (max. 3) per migliorare i risultati.
-            5. Sulla base di tutte le informazioni estratte, ragiona ed estrai la lista dipiatti formattati 
+                Applica nuovamente la distanza di Levenshtein (max. 3) per migliorare i risultati. Utilizza la clausola DISTINCT.
+            5. Sulla base di tutte le informazioni estratte, ragiona ed estrai la lista di piatti formattati 
                 chiaramente che soddisfano la domanda.
             
             Usa i tool senza limiti per raccogliere tutte le informazioni necessarie.
                            
-            Aassicurati di usare il corretto verso nelle relazioni e poni attenzione a tutte le condizioni della domanda.
-            
+            Assicurati di usare il corretto verso nelle relazioni e poni attenzione a tutte le condizioni della domanda.
+            E' importante memorizzare che una licenza di livello maggiore comporta avere tutte le licenze minori.
+            Fai attenzione ai numeri scritti in lettere romane, considerarli e convertili in interi arabi.
+                        
             Quando non ottieni l'informazione che cerchi dal VectorDB, prova ad aumentare k.
             
             Quando ottieni una lista vuota di risultati dal grafo:
             - analizza la query che hai scritto per individuare eventuali errori
             - riprova a scrivere la query eseguendo tre tentativi prima di arrenderti.
             
-            Quando ti arrendi, inventa e restituisci un singolo piatto.
+            Quando ti arrendi, restituisci un insieme vuoto.
             
             Output atteso: l'elenco dei piatti senza altro testo.
             

@@ -34,7 +34,7 @@ with open(DOMANDE_PATH, mode='r', encoding='utf-8') as csv_file:
     csv_questions = list(csv.reader(csv_file))
 
     responses = [["row_id", "result"]]
-    start = 10
+    start = 81
     for index, question in enumerate(csv_questions[start:]):
         try:
             logging.info(f"Started answering num {index + start}: {question[0]}")

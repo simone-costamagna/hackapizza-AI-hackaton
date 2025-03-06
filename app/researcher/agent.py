@@ -1,7 +1,7 @@
 import logging
 from typing import Annotated
 from langchain_core.messages import AIMessage
-from langchain_core.runnables import Runnable
+from langchain_core.runnables import Runnable, RunnableConfig
 from langgraph.graph.message import AnyMessage, add_messages
 from typing_extensions import TypedDict
 
@@ -27,7 +27,7 @@ class Agent:
             if not self.history:
                 state['messages'] = [state['messages'][-1]]
 
-            result = self.runnable.invoke(state)
+            result = self.runnable.invoke(state, RunnableConfig(recursion_limit=60))
 
             # If the agent used tools
             if hasattr(result, "tool_calls") and len(result.tool_calls) > 0:

@@ -11,8 +11,8 @@ examples = """
             AIMessage(content='Ora cerco le quantità legali prescritte nel codice galattico', tool_calls=[{'args': {'k': 5, 'question': 'Sostanze regolamentate'}, 'name': 'retrieve_functional_context'}]}
             ToolMessage(content='Vector Store content: se non diversamente specificato, tutte le sostanze regolamentate nel presente documento sono soggette a un limite massimo del 5% in massa o volume rispetto alla... ')          
             AIMessage(content='Ora per ogni piatto ottenuto cerco informazioni sul piatto', tool_calls=[
-            {'args': {'k': 3, 'question': 'galassia di sapore quantum'}, 'name': 'retrieve_functional_context'}
-            {'args': {'k': 3, 'question': 'cosmos risotto reale'}, 'name': 'retrieve_functional_context'}
+            {'args': {'k': 2, 'question': 'galassia di sapore quantum'}, 'name': 'retrieve_functional_context'}
+            {'args': {'k': 2, 'question': 'cosmos risotto reale'}, 'name': 'retrieve_functional_context'}
             ]}
             ToolMessage(content='Vector Store content: La "Galassia di Sapore Quantico" è stata un'altra delusione notevole. Nonostante la presenza della Polvere di Stelle (1% della preparazione), il piatto mancava completamente di quella scintilla celestiale tanto pubblicizzata. La Carne di Drago (altro 1%) era così stracotta che sembrava provenire da un lucertolone qualunque piuttosto che da una maestosa creatura mitica.')          
             ToolMessage(content='Vector Store content: ') 
@@ -22,21 +22,20 @@ examples = """
             - La galassia di sapore quantico")
             
             [Input]
-            'Quali piatti necessitano della licenza temporale non base per la preparazione?
+            'Quali piatti necessitano della licenza temporale non base per la preparazione, escludendo quelli con Fusilli del Vento?
             [Output]
             AIMessage(content='Devo cercare la licenza temporale sul manuale di cucina, per poter capire il nome completo dalla sigla e qual è il livello base e cercare le descrizioni delle tecniche di preparazione per sapere quali necessitano della licenza temporale non base.', tool_calls=[
             {'args': {'k': 2, 'question': 'Licenza temporale'}, 'name': 'retrieve_functional_context'}
-            {'args': {'k': 3, 'question': 'Licenze e Tecniche di Preparazione'}, 'name': 'retrieve_functional_context'}])
-            ])
+            ])                                                                                                                                                                                                           
             ToolMessage(content='Vector Store content: temporale ha: **Livello I**, **Livello II** e **Livello III**')          
             ToolMessage(content='Vector Store content: Le disposizioni di cui ai successivi articoli individuano e disciplinano, in via tassativa ed esaustiva, le metodologie di preparazione alimentare per le quali è richiesto il possesso di licenze diverse o di livello superiore rispetto a quelle conferite ope legis.  
             4.1 $NOME_CATEGORIA_TECNICA_1: - La $TECNICA_3 richiede una licenza temporale di livello I
             4.2 $NOME_CATEGORIA_TECNICA_2: - La $TECNICA_4 richiede una licenza magnetica di livello I - La $TECNICA_5 richiede una temporale di secondo (II) livello\n\n')
-            AIMessage(content='So che la tecnica $TECNICA_5 richiede la licenza temporale non base. Ora valido tutte le entità', tool_calls=[
+            AIMessage(content='So che il livello temporale di base è 1 (I). Quindi la tecnica $TECNICA_5 richiede la licenza temporale non base perché è di II (secondo) livello mentre la $TECNICA_3 richiede il livello base ed evito di considerarla. Ora valido tutte le entità', tool_calls=[
             {'args': {'query_cypher': 'MATCH (t:TecnicaPreparazione) WHERE apoc.text.levenshteinDistance(t.Nome, LOWER('$TECNICA_5')) < 3 RETURN t', 'name': 'retrieve_technical_context'}})
             ToolMessage(content='Graph DB content: (:TecnicaPreparazione {Nome: "$TECNICA_5"})│["Certificazione"]\n\n')
             AIMessage(content='Ho validato le entità. Genero la query finale', tool_calls=[
-            {'args': {'query_cypher': 'MATCH (p:Piatto)-[:PREPARATO_CON]->(t1:TecnicaPreparazione) WHERE (apoc.text.levenshteinDistance(t1.Nome, '$TECNICA_5') < 3) RETURN DISTINCT p.Nome', 'name': 'retrieve_technical_context'}})
+            {'args': {'query_cypher': 'MATCH (p:Piatto)-[:PREPARATO_CON]->(t1:TecnicaPreparazione), (p:Piatto)-[:CONTIENE]->(i:Ingrediente)  WHERE (apoc.text.levenshteinDistance(t1.Nome, '$TECNICA_5') < 3) AND NOT apoc.text.levenshteinDistance(LOWER(i.Nome), 'fusilli del vento') < 3  RETURN DISTINCT p.Nome', 'name': 'retrieve_technical_context'}})
             ToolMessage(content='Graph DB content: panetto di carne\n\n')         
             AIMessage(content='I piatti che necessitano della licenza $NOME_LICENZA non base sono: panetto di carne')
 
@@ -44,7 +43,7 @@ examples = """
             "Quali piatti sono cucinati da chef con licenza Mx di grado 1?"
             [Output]
             AIMessage(content='Voglio capire a cosa si riferisce la sigla Mx, cerco sul vector database il suo 
-            significato', tool_calls=[{'args': {'k': 3, 'question': 'Licenza Mx'}, 'name': 'retrieve_functional_context'}
+            significato', tool_calls=[{'args': {'k': 2, 'question': 'Licenza Mx'}, 'name': 'retrieve_functional_context'}
             ])\
             ToolMessage(content='Vector Store content: Magnetica (Mx) Livello 0: Polo nord e sud, posseduta da tutti se 
             non diversamente specificato Livello I: Mono-pol \n\n')
@@ -58,7 +57,7 @@ examples = """
             {'args': {'query_cypher': 'MATCH (c:Certificazione) WHERE apoc.text.levenshteinDistance(c.Nome, LOWER('Magnetica')) < 3 RETURN c, labels(c) AS entita'}, 'name': 'retrieve_technical_context'},
             ])
             ToolMessage(content='Graph DB content: (:Certificazione {{Nome: "magnetico"}})│["Certificazione"])
-            AIMessage(content="Ho trovato tutte le entità, genero la query per ottenere l'elenco dei piatti che soddisfano la domanda", tool_calls=[{'args': {'query_cypher': 'MATCH (p:Piatto)<-[:SERVE]-(r:Ristorante)-[:HA_CHEF]->(s:Chef)-[ce:HA_CERTIFICAZIONE]->(c:Certificazione) WHERE ce.Livello = '1' AND apoc.text.levenshteinDistance(c.Nome, 'magnetico') < 5 RETURN p.Nome', 'name': 'retrieve_technical_context'},])
+            AIMessage(content="Ho trovato tutte le entità, genero la query per ottenere l'elenco dei piatti che soddisfano la domanda", tool_calls=[{'args': {'query_cypher': 'MATCH (p:Piatto)<-[:SERVE]-(r:Ristorante)-[:HA_CHEF]->(s:Chef)-[ce:HA_CERTIFICAZIONE]->(c:Certificazione) WHERE toInteger(ce.Livello) >= 1 AND apoc.text.levenshteinDistance(c.Nome, 'magnetico') < 5 RETURN p.Nome', 'name': 'retrieve_technical_context'},])
             ToolMessage(content="Graph DB content: 'pioggia di andromeda', 'galassia spaziale')
             AIMessage(content="I piatti che sono cucinati da uno chef con licenza magnetica di grado almeno 1 sono: pioggia di andromeda e galassia spaziale)
 
@@ -97,3 +96,6 @@ examples = """
             ToolMessage(content='Graph DB content: "il banchetto delle galassie", "odissea celestiale"\n\n')
             AIMessage(content='I piatti cucinati entro un raggio di 176 anni dal pianeta Arrakis, Arrakis incluso sono: il banchetto delle galassie ed odissea celestiale")
 """
+
+
+# {'args': {'k': 3, 'question': 'Licenze e Tecniche di Preparazione'}, 'name': 'retrieve_functional_context'}])
